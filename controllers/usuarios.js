@@ -1,16 +1,19 @@
 //Importando el modelo de usuario
 const Usuario = require('../models/Usuario')
 
+//CREATE
 function agregarUsuario(req, res) {
     //Aqui va el codigo para agregar usuarios en la DB
 };
 
-function eliminarUsuario(req, res) {
-    //Aqui va el codigo para  hacer eliminar usuarios en la DB
-};
-
+//UPDATE
 function modificarUsuario(req, res) {
     //Aqui va el codigo para modificar usuarios en la DB
+};
+
+//DELETE
+function eliminarUsuario(req, res) {
+    //Aqui va el codigo para  hacer eliminar usuarios en la DB
 };
 
 function iniciarSesion(req, res) {
@@ -25,8 +28,8 @@ function cerrarSesion(req, res) {
 //Exportamos las funciones definidas
 module.exports = {
     agregarUsuario,
-    eliminarUsuario,
     modificarUsuario,
+    eliminarUsuario,
     iniciarSesion,
     cerrarSesion
 }
