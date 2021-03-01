@@ -3,7 +3,7 @@ var router = require('express').Router();
 
 // definimos el comportamiento en la raíz del endpoint
 router.get('/', (req, res)=>{
-  res.send('Welcome to Fresh Ratings 🥵');
+  res.send('🎬🧐 Welcome to Fresh Ratings!! 🎬🧐');
 });
 
 router.use('/usuarios', require('./usuarios'));
