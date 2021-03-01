@@ -8,6 +8,13 @@ function agregarUsuario(req, res) {
     res.status(201).send(usuario)
 };
 
+//Read
+function obtenerUsuarios(req, res) {
+    // Simulando dos usuarios y respondiendolos
+    var usuario1 = new Usuario(1, 'Vicente', 'Guerrero', 55, 'vicente.g@gmail.com', '12345', 'admin', '25-feb-2021')
+    res.send([usuario1])
+  }
+
 //UPDATE
 function modificarUsuario(req, res) {
     //Aqui va el codigo para modificar usuarios en la DB
@@ -40,6 +47,7 @@ function cerrarSesion(req, res) {
 //Exportamos las funciones definidas
 module.exports = {
     agregarUsuario,
+    obtenerUsuarios,
     modificarUsuario,
     eliminarUsuario,
     iniciarSesion,
