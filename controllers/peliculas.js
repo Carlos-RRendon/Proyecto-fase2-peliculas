@@ -11,7 +11,7 @@ function agregarPelicula(req, res) {
 //READ
 function consultarPelicula(req, res) {
     //Aqui va el codigo para  hacer consultas de peliculas en la DB
-    // Similación de dos peliculas y regresándolas
+    // Similación de una película y regresándolas
     var pelicula1 = new Pelicula(1, 'Fight Club', 'Drama, Mystery And Thriller', 'Una peli muy chida', 9.3, 'R', '2hr 19m', 'David Fincher', 'Brad Pitt, Helena Carter', 'English', 'Oct 15, 1999')
     res.send([pelicula1])
 };
