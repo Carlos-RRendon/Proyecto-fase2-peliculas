@@ -1,0 +1,22 @@
+{
+  "name": "Proyecto-fase2-peliculas",
+  "version": "1.0.0",
+  "description": "En este repositorio se encuentra el proyecto final del modulo 2 de la fase 2 del equipo 18 en BEDU ## BEDU-Santander ### Equipo 18 - Jesus Omar Cervantes Gonzalez - Sergio Alberto García Martínez - Carlos Iván Ramírez Rendón",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlos-RRendon/Proyecto-fase2-peliculas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlos-RRendon/Proyecto-fase2-peliculas/issues"
+  },
+  "homepage": "https://github.com/Carlos-RRendon/Proyecto-fase2-peliculas#readme"
+}
