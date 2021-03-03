@@ -1,7 +1,7 @@
-//Pelicula.js
+//Movie.js
 //Clase que representa a una pelicula
 
-class Pelicula{
+class Movie{
     constructor(id, titulo, genero, sinopsis, calificacion, clasificacion, duracion, director, actores, idiomaOriginal, fechaEstreno){
         this.id = id;
         this.titulo = titulo;
@@ -17,4 +17,4 @@ class Pelicula{
     }
 }
 
-module.exports = Pelicula
+module.exports = Movie

@@ -6,8 +6,8 @@ router.get('/', (req, res)=>{
   res.send('🎬🧐 Welcome to Fresh Ratings!! 🎬🧐');
 });
 
-router.use('/usuarios', require('./usuarios'));
-router.use('/peliculas', require('./peliculas'));
+router.use('/users', require('./users'));
+router.use('/movies', require('./movies'));
 
 // exportamos nuestro nuevo router
 module.exports = router;

@@ -1,7 +1,7 @@
-//Usuario.js
+//User.js
 //Clase que representa a un usuario
 
-class Usuario{
+class User{
     constructor(id, nombre, apellido, edad, correo, contraseña, tipo, fechaCreacion){
         this.id = id;
         this.nombre = nombre;
@@ -14,4 +14,4 @@ class Usuario{
     }
 }
 
-module.exports = Usuario
+module.exports = User
