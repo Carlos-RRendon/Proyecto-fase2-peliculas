@@ -1,0 +1,372 @@
+[
+    {
+        
+        "pelicula": {
+            " _id": 2,
+            "titulo": "Inception",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Suspenso", "Drama", "Acción","Ciencia ficción"],
+            "sinopsis": "Dom Cobb es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarles los secretos de sus subconscientes. Su habilidad lo ha vuelto muy popular en el mundo del espionaje corporativo, pero ha tenido un gran costo en la gente que ama. Cobb obtiene la oportunidad de redimirse cuando recibe una tarea imposible: plantar una idea en la mente de una persona. Si tiene éxito, será el crimen perfecto, pero un enemigo se anticipa a sus movimientos.",
+            "clasificacion": "PG-13",
+            "duración": "148 minutos",
+            "director": "Christopher Nolan",
+            "actores": ["Leonardo DiCaprio", "Ken Watanabe", "Joseph Gordon-Levitt","Marion Cotillard","Elliot Pagenota",​"Tom Hardy","Cillian Murphy","Tom Berenger"," Michael Caine"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2010"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "11-02-2021"
+    },
+
+    {
+        
+        "pelicula": {
+            " _id": 3,
+            "titulo": "Interestellar",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Ciencia ficción"],
+            "sinopsis": "Gracias a un descubrimiento, un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí.",
+            "clasificacion": "PG-13",
+            "duración": "169 mins",
+            "director": "Christopher Nolan",
+            "actores": ["Matthew McConaughey","Anne Hathaway","Jessica Chastain","Bill Irwin","Ellen Burstyn","Michael Caine","Matt Damon"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2014"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "23-09-2020"
+    },
+
+    {
+        
+        "pelicula": {
+            " _id": 4,
+            "titulo": "El padrino",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Gánsters", "Drama"],
+            "sinopsis": "Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar todas las posesiones de la familia negociando con el Vaticano. Después de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios.",
+            "clasificacion": "R",
+            "duración": "175 mins",
+            "director": "Francis Ford Coppola",
+            "actores": ["Marlon Brando","Al Pacino","Robert Duvall","James Caan","Richard Castellano","Diane Keaton"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1972"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "10-05-2019"
+    },
+
+    {
+       
+        "pelicula": {
+            " _id": 5,
+            "titulo": "Indiana Jones: y los cazadores del arca perdida",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Aventuras", "Accion"],
+            "sinopsis": "El arqueólogo Indiana Jones necesita encontrar el Arca de la Alianza, una reliquia bíblica que contiene los Diez Mandamientos y que convierte en invencible a su poseedor. Jones deberá adelantarse a los nazis, quienes también buscan el Arca.",
+            "clasificacion": "PG",
+            "duración": "115 mins",
+            "director": "Steven Spielberg",
+            "actores": ["Harrison Ford","Karen Allen","Paul Freeman","Ronald Lacey","John Rhys-Davies","Denholm Elliott","Alfred Molina","Wolf Kahler","Anthony Higgins","Vic Tablian","Don Fellows","William Hootkins"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1981"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "06-31-2018"
+    },
+
+    {
+        "pelicula": {
+            " _id": 6,
+            "titulo": "Star Wars: Episodio 5 - El imperio contraataca",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Ciencia Ficción", "Épico"],
+            "sinopsis": "Aunque la Estrella de la Muerte ha sido destruida, las tropas imperiales han hecho salir a las fuerzas rebeldes de sus bases ocultas y los persiguen a través de la galaxia. Mientras, el grupo de rebeldes de Skywalker se esconde en un planeta helado.",
+            "clasificacion": "PG",
+            "duración": "127 mins",
+            "director": "Irvin Kershner",
+            "actores": ["Mark Hamill","Harrison Ford","Carrie Fisher","Billy Dee Williams","Anthony Daniels","David Prowse","Peter Mayhew","Kenny Baker","Frank Oz","James Earl Jones"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1980"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "28-11-2020"
+    },
+
+    {
+        "pelicula": {
+            " _id": 7,
+            "titulo": "Sueños de fuga",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Drama"],
+            "sinopsis": "Un hombre inocente es enviado a una corrupta penitenciaria de Maine en 1947 y sentenciado a dos cadenas perpetuas por un doble asesinato.",
+            "clasificacion": "R",
+            "duración": "142 mins",
+            "director": "Frank Darabont",
+            "actores": ["Tim Robbins","Morgan Freeman","Bob Gunton","William Sadler","Clancy Brown","Gil Bellows","Mark Rolston","James Whitmore"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1994"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "15-08-2019"
+    },
+
+    {
+        "pelicula": {
+            " _id": 8,
+            "titulo": "Tiburon",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Terror","Suspenso","Aventura"],
+            "sinopsis": "Un gigantesco tiburón blanco amenaza a los habitantes y turistas de un pueblo costero. El alcalde encomienda la caza del escualo al jefe de la policía, un pescador y un científico. El grupo se da cuenta de que es un animal inteligente y violento.",
+            "clasificacion": "PG-13",
+            "duración": "124 mins",
+            "director": "Steven Spielberg",
+            "actores": ["Roy Scheider","Robert Shaw","Richard Dreyfuss","Lorraine Gary","Murray Hamilton"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1975"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "23-01-2020"
+    },
+    
+    {
+        "pelicula": {
+            " _id": 9,
+            "titulo": "Tiburon",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Terror","Suspenso","Aventura"],
+            "sinopsis": "Un gigantesco tiburón blanco amenaza a los habitantes y turistas de un pueblo costero. El alcalde encomienda la caza del escualo al jefe de la policía, un pescador y un científico. El grupo se da cuenta de que es un animal inteligente y violento.",
+            "clasificacion": "PG-13",
+            "duración": "124 mins",
+            "director": "Steven Spielberg",
+            "actores": ["Roy Scheider","Robert Shaw","Richard Dreyfuss","Lorraine Gary","Murray Hamilton"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1975"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "23-01-2020"
+    },
+    
+    {
+        "pelicula": {
+            " _id": 10,
+            "titulo": "El club de la pelea",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Drama","Comedia negra"],
+            "sinopsis": "Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo.",
+            "clasificacion": "R",
+            "duración": "139 mins",
+            "director": "David Fincher",
+            "actores": ["Edward Norton","Brad Pitt","Helena Bonham Carter","Meat Loaf","Jared Leto"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1999"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "16-04-2015"
+    },
+
+    {
+        "pelicula": {
+            " _id": 11,
+            "titulo": "Tiempos violentos",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Drama","Comedia negra"],
+            "sinopsis": "Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo.",
+            "clasificacion": "R",
+            "duración": "139 mins",
+            "director": "David Fincher",
+            "actores": ["Edward Norton","Brad Pitt","Helena Bonham Carter","Meat Loaf","Jared Leto"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "1999"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "16-04-2015"
+    },
+
+    {
+        "pelicula": {
+            " _id": 12,
+            "titulo": "La llegada",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Ciencia ficción"],
+            "sinopsis": "El gobierno contrata a la prestigiosa lingüista Louise Banks para que se comunique con unos alienígenas que han llegado a la Tierra. Conforme ella aprende su idioma, va experimentando regresiones muy intensas que desvelan la verdadera misión que les ha llevado hasta nuestro planeta.",
+            "clasificacion": "PG-13",
+            "duración": "116 mins",
+            "director": "Denis Villeneuve",
+            "actores": ["Amy Adams","Jeremy Renner","Forest Whitaker",
+            "Michael Stuhlbarg"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2016"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "22-05-2019"
+    },
+
+    {
+        "pelicula": {
+            " _id": 13,
+            "titulo": "Avengers: Endgame",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Acción", "Aventura","Ciencia ficción","Fantasía","Cine de superhéroes","Comedia"],
+            "sinopsis": "Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.",
+            "clasificacion": "PG-13",
+            "duración": "181 mins",
+            "director": "Anthony y Joe Russo",
+            "actores": ["Robert Downey Jr","Chris Evans","Chris Hemsworth",
+            "Mark Ruffalo", "Paul Rudd", "Jeremy Renner", "Brie Larson", "Don Cheadle", "Karen Gillan", "Bradley Cooper", "Josh Brolin","Scarlett Johansson", "Tessa Thompson", "Benedict Cumberbatch", "Chadwick Boseman", "Elizabeth Olsen", "Sebastian Stan", "Tom Hiddleston", "Tom Holland", "Anthony Mackie", "Pom Klementieff", "Dave Bautista", "Zoe Saldana", "Chris Pratt", "Michael Douglas", "Michelle Pfeiffer", "Vin Diesel", "Samuel L. Jackson"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2019"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "23-02-2020"
+    },
+
+    {
+        "pelicula": {
+            " _id": 14,
+            "titulo": "Avengers: Infinity War",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Acción", "Aventura","Ciencia ficción","Fantasía","Superhéroes"],
+            "sinopsis": "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
+            "clasificacion": "PG-13",
+            "duración": "149 mins",
+            "director": "Anthony y Joe Russo",
+            "actores": ["Robert Downey Jr", "Chris Hemsworth","Mark Ruffalo","Chris Evans","Scarlett Johansson","Don Cheadle","Benedict Cumberbatch","Tom Holland","Chadwick Boseman","Zoe Saldana","Karen Gillan","Tom Hiddleston","Paul Bettany", "Elizabeth Olsen", "Anthony Mackie","Sebastian Stan","Idris Elba","Dave Bautista","Pom Klementieff", "Vin Diesel", "Bradley Cooper", "Josh Brolin","Chris Pratt"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2018"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "28-05-2019"
+    },
+
+    {
+        "pelicula": {
+            " _id": 15,
+            "titulo": "Avengers",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Acción", "Ciencia ficción"],
+            "sinopsis": "El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo de un desastre casi seguro cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial.",
+            "clasificacion": "PG-13",
+            "duración": "143 mins",
+            "director": "Joss Whedon",
+            "actores": ["Robert Downey Jr", "Chris Evans","Mark Ruffalo","Chris Hemsworth","Scarlett Johansson","Jeremy Renner","Tom Hiddleston","Clark Gregg", "Cobie Smulders", "Stellan Skarsgard", "Samuel L. Jackson"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2012"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "11-10-2020"
+    }
+   
+]
