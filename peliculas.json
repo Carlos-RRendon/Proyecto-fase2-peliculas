@@ -368,7 +368,6 @@
         "fechaCreacion": { "$date" : "2019-28-05"}
     },
 
-   
     {
         "pelicula": {
             "_id": 15,
@@ -423,6 +422,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 17,
@@ -448,6 +448,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 18,
@@ -473,6 +474,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 19,
@@ -498,6 +500,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 20,
@@ -523,6 +526,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 21,
@@ -548,6 +552,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 22,
@@ -573,6 +578,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 23,
@@ -598,6 +604,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 24,
@@ -623,6 +630,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 25,
@@ -648,6 +656,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 26,
@@ -673,6 +682,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 27,
@@ -698,6 +708,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 28,
@@ -723,6 +734,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+
     {
         "pelicula": {
             "_id": 29,
@@ -748,6 +760,7 @@
         }],
         "fechaCreacion": { "$date" : "2021-05-03"}
     },
+    
     {
         "pelicula": {
             "_id": 30,
