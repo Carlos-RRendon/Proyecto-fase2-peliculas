@@ -1,7 +1,7 @@
 [
 {
     "pelicula": {
-        " _id": 16,
+        "_id": 16,
         "titulo": "2001: A SPACE ODYSSEY",
         "imagen": "path/to/image.jpg",
         "genero": ["Ciencia Ficcion"],
@@ -26,7 +26,7 @@
 },
 {
     "pelicula": {
-        " _id": 17,
+        "_id": 17,
         "titulo": "Taxi Driver",
         "imagen": "path/to/image.jpg",
         "genero": ["Accion", "Drama"],
@@ -51,7 +51,7 @@
 },
 {
     "pelicula": {
-        " _id": 18,
+        "_id": 18,
         "titulo": "Casablanca",
         "imagen": "path/to/image.jpg",
         "genero": ["Drama"],
@@ -76,7 +76,7 @@
 },
 {
     "pelicula": {
-        " _id": 19,
+        "_id": 19,
         "titulo": "The Godfather Part II",
         "imagen": "path/to/image.jpg",
         "genero": ["Drama", "Crimen"],
@@ -101,7 +101,7 @@
 },
 {
     "pelicula": {
-        " _id": 20,
+        "_id": 20,
         "titulo": "Blade Runner",
         "imagen": "path/to/image.jpg",
         "genero": ["Ciencia Ficcion", "Misterio"],
@@ -126,7 +126,7 @@
 },
 {
     "pelicula": {
-        " _id": 21,
+        "_id": 21,
         "titulo": "El tercer hombre",
         "imagen": "path/to/image.jpg",
         "genero": ["Suspenso", "Misterio"],
@@ -151,7 +151,7 @@
 },
 {
     "pelicula": {
-        " _id": 22,
+        "_id": 22,
         "titulo": "Star Wars: Episode IV - A New Hope",
         "imagen": "path/to/image.jpg",
         "genero": ["Aventura", "Ciencia Ficcion"],
@@ -176,7 +176,7 @@
 },
 {
     "pelicula": {
-        " _id": 23,
+        "_id": 23,
         "titulo": "Back to the Future",
         "imagen": "path/to/image.jpg",
         "genero": ["Aventura", "Comedia"],
@@ -201,7 +201,7 @@
 },
 {
     "pelicula": {
-        " _id": 24,
+        "_id": 24,
         "titulo": "THE GOOD, THE BAD AND THE UGLY",
         "imagen": "path/to/image.jpg",
         "genero": ["Viejo Oeste"],
@@ -226,7 +226,7 @@
 },
 {
     "pelicula": {
-        " _id": 25,
+        "_id": 25,
         "titulo": "DR. STRANGELOVE OR: HOW I LEARNED TO STOP WORRYING AND LOVE THE BOMB",
         "imagen": "path/to/image.jpg",
         "genero": ["Comedy"],
@@ -251,7 +251,7 @@
 },
 {
     "pelicula": {
-        " _id": 26,
+        "_id": 26,
         "titulo": "Some Like It Hot",
         "imagen": "path/to/image.jpg",
         "genero": ["Comedy"],
@@ -276,7 +276,7 @@
 },
 {
     "pelicula": {
-        " _id": 27,
+        "_id": 27,
         "titulo": "Citizen Kane ",
         "imagen": "path/to/image.jpg",
         "genero": ["Drama"],
@@ -301,7 +301,7 @@
 },
 {
     "pelicula": {
-        " _id": 28,
+        "_id": 28,
         "titulo": "Die Hard",
         "imagen": "path/to/image.jpg",
         "genero": ["Misterio", "Accion", "Suspenso"],
@@ -326,7 +326,7 @@
 },
 {
     "pelicula": {
-        " _id": 29,
+        "_id": 29,
         "titulo": "El Señor de los Anillos: la Comunidad del Anillo ",
         "imagen": "path/to/image.jpg",
         "genero": ["Aventura", "Fantasia"],
@@ -351,7 +351,7 @@
 },
 {
     "pelicula": {
-        " _id": 30,
+        "_id": 30,
         "titulo": "Aliens: El regreso",
         "imagen": "path/to/image.jpg",
         "genero": ["Ciencia Ficcion", "Accion","Terror"],
