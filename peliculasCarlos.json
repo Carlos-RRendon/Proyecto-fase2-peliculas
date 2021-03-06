@@ -1,7 +1,7 @@
 [
     {
         "pelicula": {
-            " _id": 1,
+            "_id": 1,
             "titulo": "Batman: El caballero de la noche",
             "imagen": "path/to/image.jpg",
             "genero": ["Acción", "Drama"],
@@ -11,7 +11,7 @@
             "director": "Christopher Nolan",
             "actores": ["Christian Bale", "Michael Caine", "Heath Ledger", "Gary Oldman", "Aaron Eckhart", "Maggie Gyllenhaal", "Morgan Freeman"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2008"
+            "releaseYear": "2008" 
         },
         "calificacion": [{
             "_id": 1,
@@ -28,7 +28,7 @@
     {
         
         "pelicula": {
-            " _id": 2,
+            "_id": 2,
             "titulo": "Inception",
             "imagen": "path/to/image.jpg",
             "genero": ["Suspenso", "Drama", "Acción","Ciencia ficción"],
@@ -54,7 +54,7 @@
 
     {
         "pelicula": {
-            " _id": 3,
+            "_id": 3,
             "titulo": "Interestellar",
             "imagen": "path/to/image.jpg",
             "genero": ["Ciencia ficción"],
@@ -81,7 +81,7 @@
 
     { 
         "pelicula": {
-            " _id": 4,
+            "_id": 4,
             "titulo": "El padrino",
             "imagen": "path/to/image.jpg",
             "genero": ["Gánsters", "Drama"],
@@ -134,7 +134,7 @@
 
     {
         "pelicula": {
-            " _id": 6,
+            "_id": 6,
             "titulo": "Star Wars: Episodio 5 - El imperio contraataca",
             "imagen": "path/to/image.jpg",
             "genero": ["Ciencia Ficción", "Épico"],
@@ -160,7 +160,7 @@
 
     {
         "pelicula": {
-            " _id": 7,
+            "_id": 7,
             "titulo": "Sueños de fuga",
             "imagen": "path/to/image.jpg",
             "genero": ["Drama"],
@@ -186,7 +186,7 @@
 
     {
         "pelicula": {
-            " _id": 8,
+            "_id": 8,
             "titulo": "Tiburon",
             "imagen": "path/to/image.jpg",
             "genero": ["Terror","Suspenso","Aventura"],
@@ -212,7 +212,7 @@
     
     {
         "pelicula": {
-            " _id": 9,
+            "_id": 9,
             "titulo": "Tiburon",
             "imagen": "path/to/image.jpg",
             "genero": ["Terror","Suspenso","Aventura"],
@@ -238,7 +238,7 @@
     
     {
         "pelicula": {
-            " _id": 10,
+            "_id": 10,
             "titulo": "El club de la pelea",
             "imagen": "path/to/image.jpg",
             "genero": ["Drama","Comedia negra"],
@@ -264,7 +264,7 @@
 
     {
         "pelicula": {
-            " _id": 11,
+            "_id": 11,
             "titulo": "Tiempos violentos",
             "imagen": "path/to/image.jpg",
             "genero": ["Drama","Comedia negra"],
@@ -290,7 +290,7 @@
 
     {
         "pelicula": {
-            " _id": 12,
+            "_id": 12,
             "titulo": "La llegada",
             "imagen": "path/to/image.jpg",
             "genero": ["Ciencia ficción"],
@@ -317,7 +317,7 @@
 
     {
         "pelicula": {
-            " _id": 13,
+            "_id": 13,
             "titulo": "Avengers: Endgame",
             "imagen": "path/to/image.jpg",
             "genero": ["Acción", "Aventura","Ciencia ficción","Fantasía","Cine de superhéroes","Comedia"],
@@ -344,7 +344,7 @@
 
     {
         "pelicula": {
-            " _id": 14,
+            "_id": 14,
             "titulo": "Avengers: Infinity War",
             "imagen": "path/to/image.jpg",
             "genero": ["Acción", "Aventura","Ciencia ficción","Fantasía","Superhéroes"],
@@ -371,7 +371,7 @@
    
     {
         "pelicula": {
-            " _id": 15,
+            "_id": 15,
             "titulo": "Avengers",
             "imagen": "path/to/image.jpg",
             "genero": ["Acción", "Ciencia ficción"],
