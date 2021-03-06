@@ -108,7 +108,7 @@
     {
        
         "pelicula": {
-            " _id": 5,
+            "_id": 5,
             "titulo": "Indiana Jones: y los cazadores del arca perdida",
             "imagen": "path/to/image.jpg",
             "genero": ["Aventuras", "Accion"],
