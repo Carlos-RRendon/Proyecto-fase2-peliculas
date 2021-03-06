@@ -1,5 +1,31 @@
 [
     {
+        "pelicula": {
+            " _id": 1,
+            "titulo": "Batman: El caballero de la noche",
+            "imagen": "path/to/image.jpg",
+            "genero": ["Acción", "Drama"],
+            "sinopsis": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía.",
+            "clasificacion": "PG-13",
+            "duración": "152 mins",
+            "director": "Christopher Nolan",
+            "actores": ["Christian Bale", "Michael Caine", "Heath Ledger", "Gary Oldman", "Aaron Eckhart", "Maggie Gyllenhaal", "Morgan Freeman"],
+            "idiomaOriginal": "Inglés",
+            "releaseYear": "2008"
+        },
+        "calificacion": [{
+            "_id": 1,
+            "usuario": "Charles",
+            "calificacion": 9
+        }, {
+            "_id": 2,
+            "usuario": "Alberto",
+            "calificacion": 7.8
+        }],
+        "fechaCreacion": "10-01-2021"
+    },
+
+    {
         
         "pelicula": {
             " _id": 2,
@@ -10,7 +36,7 @@
             "clasificacion": "PG-13",
             "duración": "148 minutos",
             "director": "Christopher Nolan",
-            "actores": ["Leonardo DiCaprio", "Ken Watanabe", "Joseph Gordon-Levitt","Marion Cotillard","Elliot Pagenota",​"Tom Hardy","Cillian Murphy","Tom Berenger"," Michael Caine"],
+            "actores": ["Leonardo Dicaprio", "Ken Watanabe","Joseph Gordon-Levitt", "Marion Cotillard", "Elliot Pagenota", "Tom Hardy", "Cillian Murphy", "Tom Berenger", "Michael Caine"],
             "idiomaOriginal": "Inglés",
             "releaseYear": "2010"
         },
@@ -27,7 +53,6 @@
     },
 
     {
-        
         "pelicula": {
             " _id": 3,
             "titulo": "Interestellar",
@@ -45,7 +70,8 @@
             "_id": 1,
             "usuario": "Charles",
             "calificacion": 9
-        }, {
+        },
+        {
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
@@ -53,8 +79,7 @@
         "fechaCreacion": "23-09-2020"
     },
 
-    {
-        
+    { 
         "pelicula": {
             " _id": 4,
             "titulo": "El padrino",
@@ -343,6 +368,7 @@
         "fechaCreacion": "28-05-2019"
     },
 
+   
     {
         "pelicula": {
             " _id": 15,
@@ -357,15 +383,18 @@
             "idiomaOriginal": "Inglés",
             "releaseYear": "2012"
         },
-        "calificacion": [{
+        "calificacion": [
+            {
             "_id": 1,
             "usuario": "Charles",
             "calificacion": 9
-        }, {
+        },
+         {
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
+        }
+    ],
         "fechaCreacion": "11-10-2020"
     }
    
