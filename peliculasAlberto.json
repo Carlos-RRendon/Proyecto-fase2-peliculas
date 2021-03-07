@@ -11,7 +11,7 @@
             "director": "Victor Fleming",
             "actores": ["Clark Gable", "Vivien Leigh", "Leslie Howard", "Olivia de Havilland", "Thomas Mitchell", "Barbara O'Neil"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "1939"
+            "releaseYear": { "$date":"1939"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -24,7 +24,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -38,7 +38,7 @@
             "director": "George Roy Hill",
             "actores": ["Paul Newman", "Robert Redford", "Katharine Ross"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "1969"
+            "releaseYear": { "$date":"1969"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -51,7 +51,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -65,7 +65,7 @@
             "director": "Sam Raimi",
             "actores": ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2002"
+            "releaseYear": { "$date":"2002"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -78,7 +78,7 @@
                 "calificacion": 10
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -92,7 +92,7 @@
             "director": "Sam Raimi",
             "actores": ["Tobey Maguire", "Kirsten Dunst", "James Franco", "Alfred Molina"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2004"
+            "releaseYear": { "$date":"2004"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -105,7 +105,7 @@
                 "calificacion": 10
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -119,7 +119,7 @@
             "director": "Sam Raimi",
             "actores": ["Tobey Maguire", "Kirsten Dunst", "James Franco", "Thomas Haden Church"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2007"
+            "releaseYear": { "$date":"2007"}
         },
         "calificacion": [{
                 "_id":1,
@@ -132,7 +132,7 @@
                 "calificacion": 10
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -146,7 +146,7 @@
             "director": "Joseph Kosinski",
             "actores": ["Jeff Bridges", "Garrett Hedlund", "Olivia Wilde"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2010"
+            "releaseYear": { "$date":"2010"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -159,7 +159,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -173,7 +173,7 @@
             "director": "Spike Jonze",
             "actores": ["Joaquin Phoenix", "Amy Adams", "Scarlett Johansson", "Rooney Mara", "Chris Pratt", "Olivia Wilde"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2014"
+            "releaseYear": { "$date":"2014"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -186,7 +186,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -200,7 +200,7 @@
             "director": "Lynne Ramsay",
             "actores": ["Joaquin Phoenix", "Ekaterina Samsonov", "Alessandro Nivola", "Alex Manette"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2018"
+            "releaseYear": { "$date":"2018"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -213,7 +213,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -227,7 +227,7 @@
             "director": "Robert Eggers",
             "actores": ["Robert Pattinson", "Willem Dafoe"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2019"
+            "releaseYear": { "$date":"2019"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -240,7 +240,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -254,7 +254,7 @@
             "director": "Martin Scorsese",
             "actores": ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie", "Jon Bernthal"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2013"
+            "releaseYear": { "$date":"2013"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -267,7 +267,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -281,7 +281,7 @@
             "director": "Taika Waititi",
             "actores": ["Roman Griffin Davis", "Thomasin McKenzie", "Scarlett Johansson", "Taika Waititi"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2019"
+            "releaseYear": { "$date":"2019"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -294,7 +294,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -308,7 +308,7 @@
             "director": "Nima Nourizadeh",
             "actores": ["Thomas Mann", "Oliver Cooper", "Jonathan Daniel Brown", "Kirby Bliss Blanton"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2012"
+            "releaseYear": { "$date":"2012"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -321,7 +321,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -335,7 +335,7 @@
             "director": "Bong Joon-ho",
             "actores": ["Song Kang-ho", "Yeo-jeong Jo", "So-dam Park", "Woo-sik Choi"],
             "idiomaOriginal": "Korean",
-            "releaseYear": "2019"
+            "releaseYear": { "$date":"2019"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -348,7 +348,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -362,7 +362,7 @@
             "director": "Joon-ho Bong",
             "actores": ["Kim Hye-ja", "Won Bin"],
             "idiomaOriginal": "Korean",
-            "releaseYear": "2010"
+            "releaseYear": { "$date":"2010"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -375,7 +375,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -389,7 +389,7 @@
             "director": "Carlos Carrera",
             "actores": ["Gael García Bernal", "Ana Claudia Talancón", "Damián Alcázar"],
             "idiomaOriginal": "Español",
-            "releaseYear": "2002"
+            "releaseYear": { "$date":"2002"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -402,7 +402,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -416,7 +416,7 @@
             "director": "Sean Durkin",
             "actores": ["Elizabeth Olsen", "Sarah Paulson", "John Hawkes"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2011"
+            "releaseYear": { "$date":"2011"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -429,7 +429,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -443,7 +443,7 @@
             "director": "D.J. Caruso",
             "actores": ["Shia LaBeouf", "David Morse", "Sarah Roemer"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2007"
+            "releaseYear": { "$date":"2007"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -456,7 +456,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -470,7 +470,7 @@
             "director": "Quentin Tarantino",
             "actores": ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie", "Dakota Fanning"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2019"
+            "releaseYear": { "$date":"2019"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -483,7 +483,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -497,7 +497,7 @@
             "director": "Quentin Tarantino",
             "actores": ["Brad Pitt", "Mélanie Laurent", "Christoph Waltz", "Michael Fassbender"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2009"
+            "releaseYear": { "$date":"2009"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -510,7 +510,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -524,7 +524,7 @@
             "director": "James Mangold",
             "actores": ["Matt Damon", "Christian Bale", "Jon Bernthal", "Caitriona Balfe"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2019"
+            "releaseYear": { "$date":"2019"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -537,7 +537,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     },
     {
         "pelicula": {
@@ -551,7 +551,7 @@
             "director": "David Ayer",
             "actores": ["Brad Pitt", "Shia LaBeouf", "Logan Lerman", "Michael Peña", "Jon Bernthal"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": "2014"
+            "releaseYear": { "$date":"2014"}
         },
         "calificacion": [{
                 "_id": 1,
@@ -564,6 +564,6 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": "15-02-2021"
+        "fechaCreacion": {"$date":"15-02-2021"}
     }
 ]
