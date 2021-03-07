@@ -213,16 +213,16 @@
     {
         "pelicula": {
             "_id": 9,
-            "titulo": "Tiburon",
-            "imagen": "path/to/image.jpg",
-            "genero": ["Terror","Suspenso","Aventura"],
-            "sinopsis": "Un gigantesco tiburón blanco amenaza a los habitantes y turistas de un pueblo costero. El alcalde encomienda la caza del escualo al jefe de la policía, un pescador y un científico. El grupo se da cuenta de que es un animal inteligente y violento.",
-            "clasificacion": "PG-13",
-            "duración": "124 mins",
-            "director": "Steven Spielberg",
-            "actores": ["Roy Scheider","Robert Shaw","Richard Dreyfuss","Lorraine Gary","Murray Hamilton"],
+            "titulo": "Buenos Muchachos",
+            "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_hqADaeJSNf--zdL7hMyUYAyC-nSRdsNkVLBJizz4GUTQgni0",
+            "genero": ["Drama","Crimen","Gánsteres"],
+            "sinopsis": "Henry, un niño de trece años de Brooklyn, vive fascinado con el mundo de los gánsters. Su sueño se hace realidad cuando entra en la familia Pauline.",
+            "clasificacion": "R",
+            "duración": "146 mins",
+            "director": "Martin Scorsese",
+            "actores": ["Robert De Niro","Ray Liotta","Joe Pesci","Lorraine Bracco","Paul Sorvino"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": { "$date" : "1975"}
+            "releaseYear": { "$date" : "1990"}
         },
         "calificacion": [{
             "_id": 1,
