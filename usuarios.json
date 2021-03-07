@@ -1,0 +1,24 @@
+[
+    {
+        "_id" : 2,
+        "usuario" : "Chuy210",
+        "nombre" : "Jesus",
+        "apellido" : "Garcia",
+        "edad" : 23 ,
+        "correo" : "chuy210@gmail.com",
+        "contraseña" : "JesGa210",
+        "tipo" : "admin",
+        "fechaCreacion" : {"type": Date , "default": Date.now}
+    },
+    {
+        "_id": 1,
+        "usuario": "Charles",
+        "nombre": "Carlos",
+        "apellido": "Ramirez",
+        "edad": "25",
+        "correo": "carlos.ramirezrn@outlook.com",
+        "contraseña": "elPAtitofeo123",
+        "tipo": "admin",
+        "fechaCreacion": {"type": Date , "default": Date.now}
+    }
+]
