@@ -181,8 +181,8 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2019-08-15"}
-    },
+        "fechaCreacion": { "$date" : "2019-08-   }-}
+-15,
 
     {
         "pelicula": {
@@ -370,8 +370,8 @@
 
     {
         "pelicula": {
-            "_id": 15,
-            "titulo": "Avengers",
+            "_id":     -
+ -15      "titulo": "Avengers",
             "imagen": "path/to/image.jpg",
             "genero": ["Acción", "Ciencia ficción"],
             "sinopsis": "El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo de un desastre casi seguro cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial.",
@@ -811,7 +811,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -838,7 +838,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -865,7 +865,7 @@
                 "calificacion": 10
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -892,7 +892,7 @@
                 "calificacion": 10
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -919,7 +919,7 @@
                 "calificacion": 10
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -946,7 +946,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -973,7 +973,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1000,7 +1000,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1027,7 +1027,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1054,7 +1054,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1081,7 +1081,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1108,7 +1108,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1135,7 +1135,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1162,7 +1162,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1189,7 +1189,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1216,7 +1216,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1243,7 +1243,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1270,7 +1270,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1297,7 +1297,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1324,7 +1324,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     },
     {
         "pelicula": {
@@ -1351,7 +1351,7 @@
                 "calificacion": 7.8
             }
         ],
-        "fechaCreacion": {"$date":"15-02-2021"}
+        "fechaCreacion": {"$date":"2021-02-15"}
     }
    
 ]
