@@ -370,7 +370,7 @@
 
     {
         "pelicula": {
-            "_id":  "15",
+            "_id":  15,
             "titulo": "Avengers",
             "imagen": "path/to/image.jpg",
             "genero": ["Acción", "Ciencia ficción"],
