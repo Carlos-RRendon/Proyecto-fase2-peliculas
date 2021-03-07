@@ -76,7 +76,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2020-23-09"}
+        "fechaCreacion": { "$date" : "2020-10-09"}
     },
 
     { 
@@ -155,7 +155,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2020-28-11"}
+        "fechaCreacion": { "$date" : "2020-11-28"}
     },
 
     {
@@ -181,7 +181,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2019-15-08"}
+        "fechaCreacion": { "$date" : "2019-08-15"}
     },
 
     {
@@ -207,7 +207,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2020-23-01"}
+        "fechaCreacion": { "$date" : "2020-01-23"}
     },
     
     {
@@ -233,7 +233,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2020-23-01"}
+        "fechaCreacion": { "$date" : "2020-01-22"}
     },
     
     {
@@ -259,7 +259,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2015-16-04"}
+        "fechaCreacion": { "$date" : "2015-04-16"}
     },
 
     {
@@ -267,14 +267,14 @@
             "_id": 11,
             "titulo": "Tiempos violentos",
             "imagen": "path/to/image.jpg",
-            "genero": ["Drama","Comedia negra"],
-            "sinopsis": "Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo.",
+            "genero": ["Cine policiaco"],
+            "sinopsis": "La vida de un boxeador, dos sicarios, la esposa de un gánster y dos bandidos se entrelaza en una historia de violencia y redención.",
             "clasificacion": "R",
-            "duración": "139 mins",
-            "director": "David Fincher",
-            "actores": ["Edward Norton","Brad Pitt","Helena Bonham Carter","Meat Loaf","Jared Leto"],
+            "duración": "154 mins",
+            "director": "Quentin Tarantino",
+            "actores": ["John Travolta","Samuel L. Jackson","Uma Thurman","Harvey Keitel","Tim Roth","Amanda Plummer","Maria de Medeiros","Ving Rhames","Eric Stoltz","Rosanna Arquette","Christopher Walken","Bruce Willis"],
             "idiomaOriginal": "Inglés",
-            "releaseYear": { "$date" : "1999"}
+            "releaseYear": { "$date" : "1994"}
         },
         "calificacion": [{
             "_id": 1,
@@ -285,7 +285,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2015-16-04"}
+        "fechaCreacion": { "$date" : "2015-04-16"}
     },
 
     {
@@ -312,7 +312,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2019-22-05"}
+        "fechaCreacion": { "$date" : "2019-05-22"}
     },
 
     {
@@ -339,7 +339,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2020-23-02"}
+        "fechaCreacion": { "$date" : "2020-02-23"}
     },
 
     {
@@ -365,7 +365,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }],
-        "fechaCreacion": { "$date" : "2019-28-05"}
+        "fechaCreacion": { "$date" : "2019-05-28"}
     },
 
     {
