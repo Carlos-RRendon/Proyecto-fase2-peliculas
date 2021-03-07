@@ -1,6 +1,5 @@
 [
     {
-        "_id" : 2,
         "usuario" : "Chuy210",
         "nombre" : "Jesus",
         "apellido" : "Garcia",
@@ -11,22 +10,20 @@
         "fechaCreacion" : {"$date" : "2020-02-23"} 
     },
     {
-        "_id": 1,
         "usuario": "Charles",
         "nombre": "Carlos",
         "apellido": "Ramirez",
-        "edad": "25",
+        "edad": 25,
         "correo": "carlos.ramirezrn@outlook.com",
         "contraseña": "elPAtitofeo123",
         "tipo": "admin",
         "fechaCreacion":  {"$date" : "2020-02-23"}
     },
     {
-        "_id": 3,
         "usuario": "Alberto22",
         "nombre": "Alberto",
         "apellido": "Garcia",
-        "edad": "24",
+        "edad": 24,
         "correo": "alberto.garcia@hotmail.com",
         "contraseña": "GaAlbert22",
         "tipo": "user",
