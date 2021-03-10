@@ -1,32 +1,29 @@
 [
     {
-        "usuario" : "Chuy210",
-        "nombre" : "Jesus",
-        "apellido" : "Garcia",
-        "edad" : 23 ,
-        "correo" : "chuy210@gmail.com",
-        "contraseña" : "JesGa210",
-        "tipo" : "admin",
-        "fechaCreacion" : {"$date" : "2020-02-23"} 
+        "user" : "Chuy210",
+        "name" : "Jesus",
+        "lastName" : "Garcia",
+        "age" : 23 ,
+        "email" : "chuy210@gmail.com",
+        "password" : "JesGa210",
+        "type" : "admin" 
     },
     {
-        "usuario": "Charles",
-        "nombre": "Carlos",
-        "apellido": "Ramirez",
-        "edad": 25,
-        "correo": "carlos.ramirezrn@outlook.com",
-        "contraseña": "elPAtitofeo123",
-        "tipo": "admin",
-        "fechaCreacion":  {"$date" : "2020-02-23"}
+        "user": "Charles",
+        "name": "Carlos",
+        "lastName": "Ramirez",
+        "age": 25,
+        "email": "carlos.ramirezrn@outlook.com",
+        "password": "elPAtitofeo123",
+        "type": "admin"
     },
     {
-        "usuario": "Alberto22",
-        "nombre": "Alberto",
-        "apellido": "Garcia",
-        "edad": 24,
-        "correo": "alberto.garcia@hotmail.com",
-        "contraseña": "GaAlbert22",
-        "tipo": "user",
-        "fechaCreacion":  {"$date" : "2020-02-23"}
+        "user": "Alberto22",
+        "name": "Alberto",
+        "lastName": "Garcia",
+        "age": 24,
+        "email": "alberto.garcia@hotmail.com",
+        "password": "GaAlbert22",
+        "type": "user"
     }
 ]

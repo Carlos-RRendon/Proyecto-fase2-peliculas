@@ -16,6 +16,7 @@ app.set('host',HOST);
 
 //Middlewares
 app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 app.use(morgan('dev'));
 app.use(cors());
 //app.use(bodyParser.json());
@@ -25,15 +26,19 @@ app.use(cors());
 
 
 //Routes
-//app.use('/v1', require('./routes/index.routes'));
+app.use('/v1', require('./routes/index.routes'));
 
-
-//Error 404
-app.use( (req, res, next) => {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
-  });
+// //Error 404
+//  app.use( (err,req, res, next) => {
+//      //var err = new Error('Not Found');
+//      //err.status = 404;
+//      //console.error(err.stack);
+//      //res.status(404).send('Not Found')
+//      //console.error(err)
+//      console.error(err.track);
+//      res.status(500).sent('Not found')
+     
+//    });
 
 //Static files
 

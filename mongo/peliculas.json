@@ -21,8 +21,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-10-01"}
+        }]
     },
 
     {
@@ -48,8 +47,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-11-02"}
+        }]
     },
 
     {
@@ -75,8 +73,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2020-10-09"}
+        }]
     },
 
     { 
@@ -101,8 +98,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2019-10-05"}
+        }]
     },
 
     {
@@ -128,8 +124,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2018-06-31"}
+        }]
     },
 
     {
@@ -154,8 +149,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2020-11-28"}
+        }]
     },
 
     {
@@ -180,8 +174,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2019-08-13" } 
+        }]} 
     },
 
     {
@@ -206,8 +199,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2020-01-23"}
+        }]
     },
     
     {
@@ -232,8 +224,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2020-01-22"}
+        }]
     },
     
     {
@@ -258,8 +249,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2015-04-16"}
+        }]
     },
 
     {
@@ -284,8 +274,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2015-04-16"}
+        }]
     },
 
     {
@@ -311,8 +300,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2019-05-22"}
+        }]
     },
 
     {
@@ -338,8 +326,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2020-02-23"}
+        }]
     },
 
     {
@@ -364,8 +351,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2019-05-28"}
+        }]
     },
 
     {
@@ -393,8 +379,7 @@
             "usuario": "Alberto",
             "calificacion": 7.8
         }
-    ],
-        "fechaCreacion": { "$date" : "2020-11-10"}
+    ]
     },
 
     {
@@ -419,8 +404,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -445,8 +429,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -471,8 +454,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -497,8 +479,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -523,8 +504,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -549,8 +529,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -575,8 +554,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -601,8 +579,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -627,8 +604,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -653,8 +629,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -679,8 +654,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -705,8 +679,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -731,8 +704,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -757,8 +729,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
 
     {
@@ -783,8 +754,7 @@
             "_id": 2,
             "usuario": "Alberto",
             "calificacion": 7.8
-        }],
-        "fechaCreacion": { "$date" : "2021-05-03"}
+        }]
     },
     {
         "pelicula": {
@@ -810,9 +780,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 32,
@@ -837,9 +805,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 33,
@@ -864,9 +830,7 @@
                 "usuario": "Alberto",
                 "calificacion": 10
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 34,
@@ -891,9 +855,7 @@
                 "usuario": "Alberto",
                 "calificacion": 10
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 35,
@@ -918,9 +880,7 @@
                 "usuario": "Alberto",
                 "calificacion": 10
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 36,
@@ -945,9 +905,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 37,
@@ -972,9 +930,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 38,
@@ -999,9 +955,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 39,
@@ -1026,9 +980,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 40,
@@ -1053,9 +1005,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 41,
@@ -1080,9 +1030,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 42,
@@ -1107,9 +1055,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 43,
@@ -1134,9 +1080,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 44,
@@ -1161,9 +1105,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 45,
@@ -1188,9 +1130,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 46,
@@ -1215,9 +1155,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 47,
@@ -1242,9 +1180,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 48,
@@ -1269,9 +1205,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 49,
@@ -1296,9 +1230,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 50,
@@ -1323,9 +1255,7 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    },
+        ]  },
     {
         "pelicula": {
             "_id": 51,
@@ -1350,8 +1280,6 @@
                 "usuario": "Alberto",
                 "calificacion": 7.8
             }
-        ],
-        "fechaCreacion": {"$date":"2021-02-15"}
-    }
+        ]  }
    
 ]
