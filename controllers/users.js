@@ -97,8 +97,16 @@ function updateUser(req, res, next) {
     }).catch(next)
 }
 
+function deleteUser(req, res) {
+    User.findOneAndDelete({
+        _id: req.user.id
+    }).then(r => {
+        res.status(200).send(`User ${req.params.id} deleted successfully: ${r}`);
+    })
+}
 
 module.exports = {
     createUser,
-    updateUser
+    updateUser,
+    deleteUser
 }
