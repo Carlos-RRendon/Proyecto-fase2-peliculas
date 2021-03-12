@@ -1,3 +1,4 @@
+/*
 //Importando el modelo de user
 const User = require('../models/User')
 
@@ -52,4 +53,26 @@ module.exports = {
     deleteUser,
     signIn,
     signOut
+}
+*/
+
+const mongoose = require("mongoose")
+const User = mongoose.model("User")
+const passport = require('passport');
+
+function createUser(req, res, next) {
+    const body = req.body,
+        password = body.password
+
+    delete body.password
+    const user = new User(body)
+    user.crearPassword(password)
+    user.save().then(userResult => { //Guardando nuevo usuario en MongoDB.
+        return res.status(201).json(userResult.toAuthJSON())
+    }).catch(next)
+}
+
+
+module.exports = {
+    createUser
 }

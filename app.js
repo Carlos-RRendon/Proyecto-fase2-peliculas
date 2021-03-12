@@ -1,22 +1,30 @@
 // Importamos las bibliotecas
 var express = require('express'),
-    bodyParser = require('body-parser'),
-    cors = require('cors');
+  bodyParser = require('body-parser'),
+  cors = require('cors');
 
 var app = express();
 
 
 //Middlewares
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(bodyParser.json());
 
 /*********************** Mongoose Configuration *******************************/
 const mongoose = require("mongoose");
 
 mongoose.connect(
-    "liga de mongoose"
-);
+  "liga de mongoose", {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true
+  }
+).then(() => {
+  console.log("MongoDB conected...")
+}).catch((err) => console.log(err.message))
 
 mongoose.set("debug", true);
 
@@ -30,7 +38,7 @@ require('./config/passport');
 app.use('/v1', require('./routes'));
 
 //Error 404
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
@@ -39,6 +47,6 @@ app.use(function(req, res, next) {
 
 
 // Iniciando el servidor
-var server = app.listen(process.env.PORT || 3000, function(){
+var server = app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on port ' + server.address().port);
 });
