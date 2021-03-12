@@ -41,12 +41,19 @@ movieCtrl.addMovie = (req, res) => {
 };
 
 //READ
-movieCtrl.getAllMovies = async (req, res) =>{
-    const movies = await Movie.find({})
-    res.send( {movies} )
-    
-   
+movieCtrl.getMovies = async (req, res,next) =>{
+
+    if(req.params.id){
+        try{
+            const movie = await Movie.findById(req.params.id)
+            res.send (movie)
+        } catch(e){ e => res.rend(e) }
+    } else{
+        const movies = await Movie.find({})
+        res.send( {movies})
+    } 
 };
+
 
 //UPDATE
 movieCtrl.modifyMovie = (req, res) =>{
