@@ -7,7 +7,7 @@ router.get('/', (req, res)=>{
 });
 
 router.use('/users', require('./users.routes'));
-//router.use('/movies', require('./movies'));
+router.use('/movies', require('./movies'));
 
 // exportamos nuestro nuevo router
 module.exports = router;

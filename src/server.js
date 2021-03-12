@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 app.use(morgan('dev'));
 app.use(cors());
-//app.use(bodyParser.json());
+
 
 
 //Global variables
