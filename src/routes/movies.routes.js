@@ -3,13 +3,13 @@ const router = require('express').Router();
 
  const {
      addMovie,
-     getMovie,
+     getAllMovies,
      modifyMovie,
      deleteMovie,
      addScore
  } = require('../controllers/movies.controller')
 
-//router.get('/', getMovie)
+router.get('/', getAllMovies)
 router.post('/', addMovie)
 //router.put('/:id', modifyMovie)
 //router.delete('/:id', deleteMovie)
