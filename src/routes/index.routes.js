@@ -8,8 +8,7 @@ router.get('/', (req, res)=>{
 
 router.use('/users', require('./users.routes'));
 router.use('/movies', require('./movies.routes'));
-//Route to populate db with restrictions
-router.use('/admin', require('./admin.routes'));
+
 
 // exportamos nuestro nuevo router
 module.exports = router;

@@ -4,7 +4,7 @@ const express = require('express'),
     cors = require('cors'),
     morgan = require('morgan');
 
-const {PORT, HOST} = require('./config/config')
+const {PORT, HOST, ENV} = require('./config/config')
 
 //Initializations
 const app = express();
@@ -27,6 +27,12 @@ app.use(cors());
 
 //Routes
 app.use('/v1', require('./routes/index.routes'));
+
+if ( ENV === 'development'){
+    //Routes to populate db with JSON
+    app.use('/admin', require('./routes/admin.routes'));
+}
+
 
 // //Error 404
 //  app.use( (err,req, res, next) => {
