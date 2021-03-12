@@ -1,24 +1,6 @@
 //Movie.js
 //Clase que representa a una pelicula
 
-/*
-class Movie{
-    constructor(id, titulo, genero, sinopsis, calificacion, clasificacion, duracion, director, actores, idiomaOriginal, fechaEstreno){
-        this.id = id;
-        this.titulo = titulo;
-        this.genero = genero;
-        this.sinopsis = sinopsis;
-        this.calificacion = calificacion;
-        this.clasificacion = clasificacion;
-        this.duracion = duracion;
-        this.director = director;
-        this.idiomaOriginal = idiomaOriginal;
-        this.actores = actores;
-        this.fechaEstreno = fechaEstreno
-    }
-}
-*/
-
 //Importando mongoose
 const mongoose = require('mongoose');
 const {Schema, model} = mongoose;
@@ -45,7 +27,7 @@ const Movie = new Schema({
         genre: {
             type: [{type:String, required:true}],
             validate:{
-            validator: function(v){ return v.length !== 0},
+            validator: v => { return v.length !== 0},
             msg: props => 'Must have at least one genre'
         }},
         synopsis: {
@@ -63,7 +45,7 @@ const Movie = new Schema({
         cast: {
             type:  [ {type: String} ],
             validate:{
-                validator: function(v) {
+                validator: v => {
                     console.log(v);
                     return v.length !==0
                 },

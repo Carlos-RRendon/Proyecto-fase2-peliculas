@@ -1,6 +1,6 @@
 [
     {
-        "user" : "Chuy210",
+        "username" : "Chuy210",
         "name" : "Jesus",
         "lastName" : "Garcia",
         "age" : 23 ,
@@ -9,7 +9,7 @@
         "type" : "admin" 
     },
     {
-        "user": "Charles",
+        "username": "Charles",
         "name": "Carlos",
         "lastName": "Ramirez",
         "age": 25,
@@ -18,12 +18,12 @@
         "type": "admin"
     },
     {
-        "user": "Alberto22",
+        "username": "Alberto22",
         "name": "Alberto",
         "lastName": "Garcia",
         "age": 24,
         "email": "alberto.garcia@hotmail.com",
         "password": "GaAlbert22",
-        "type": "user"
+        "type": "username"
     }
 ]
