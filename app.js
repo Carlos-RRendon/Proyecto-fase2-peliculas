@@ -11,6 +11,21 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+/*********************** Mongoose Configuration *******************************/
+const mongoose = require("mongoose");
+
+mongoose.connect(
+    "liga de mongoose"
+);
+
+mongoose.set("debug", true);
+
+require("./models/User");
+require('./config/passport');
+// Aquí se importarán los modelos Mascota y Solicitud cuando estén listos
+
+/*********************** Mongoose Configuration *******************************/
+
 // Rutas
 app.use('/v1', require('./routes'));
 
