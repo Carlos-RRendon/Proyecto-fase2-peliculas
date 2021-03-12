@@ -84,7 +84,7 @@ UserSchema.methods.validarPassword = function (password) {
 };
 
 //Generar Token de autentificación de 60 días de expiración
-UserSchema.methods.generarJWT = function () {
+UserSchema.methods.generateJWT = function () {
     const today = new Date();
     const exp = new Date(today);
     exp.setDate(today.getDate() + 60); // 60 días antes de expirar

@@ -105,8 +105,44 @@ function deleteUser(req, res) {
     })
 }
 
+function logIn(req, res, next) {
+    if (!req.body.email) {
+        return res.status(422).json({
+            errors: {
+                email: "This field is required"
+            }
+        });
+    }
+
+    if (!req.body.password) {
+        return res.status(422).json({
+            errors: {
+                password: "This field is required"
+            }
+        });
+    }
+
+    passport.authenticate('local', {
+        session: false
+    }, function (err, user, info) {
+        if (err) {
+            return next(err);
+        }
+
+        if (user) {
+            user.token = user.generateJWT();
+            return res.json({
+                user: user.toAuthJSON()
+            });
+        } else {
+            return res.status(422).json(info);
+        }
+    })(req, res, next);
+}
+
 module.exports = {
     createUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    logIn
 }
