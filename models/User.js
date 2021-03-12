@@ -68,7 +68,7 @@ UserSchema.plugin(uniqueValidator, {
 });
 
 //Crea constraseña para los usuarios
-UserSchema.methods.crearPassword = function (password) {
+UserSchema.methods.createPassword = function (password) {
     this.salt = crypto.randomBytes(16).toString("hex"); // generando una "sal" random para cada usuario
     this.hash = crypto
         .pbkdf2Sync(password, this.salt, 10000, 512, "sha512")

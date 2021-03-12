@@ -67,12 +67,38 @@ function createUser(req, res, next) {
     delete body.password
     const user = new User(body)
     user.crearPassword(password)
-    user.save().then(userResult => { //Guardando nuevo usuario en MongoDB.
-        return res.status(201).json(userResult.toAuthJSON())
+    user.save().then(createdUser => {
+        return res.status(201).json(createdUser.toAuthJSON())
+    }).catch(next)
+}
+
+function updateUser(req, res, next) {
+    console.log(req.user)
+    User.findById(req.user.id).then(user => {
+        if (!user) {
+            return res.sendStatus(401);
+        }
+        let newInfo = req.body
+        if (typeof newInfo.username !== 'undefined')
+            user.username = newInfo.username
+        if (typeof newInfo.name !== 'undefined')
+            user.name = newInfo.name
+        if (typeof newInfo.lastName !== 'undefined')
+            user.lastName = newInfo.lastName
+        if (typeof newInfo.email !== 'undefined')
+            user.email = newInfo.email
+        if (typeof newInfo.age !== 'undefined')
+            user.age = newInfo.age
+        if (typeof newInfo.password !== 'undefined')
+            user.createPassword(newInfo.password)
+        user.save().then(updatedUser => {
+            res.status(201).json(updatedUser.publicData())
+        }).catch(next)
     }).catch(next)
 }
 
 
 module.exports = {
-    createUser
+    createUser,
+    updateUser
 }
