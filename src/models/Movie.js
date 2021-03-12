@@ -46,7 +46,6 @@ const Movie = new Schema({
             type:  [ {type: String} ],
             validate:{
                 validator: v => {
-                    console.log(v);
                     return v.length !==0
                 },
                 msg: v => "Must have at least one actor"
@@ -59,19 +58,19 @@ const Movie = new Schema({
         
     score: {
         type: [{
-        _id: false,
-         user : {
-             type: Schema.ObjectId,
-             ref: 'User'
-         },
-         calification: {
-             type: Number,
-             required:true,
-              min:0,
-              max:10,
-         }
-    }]
-    },    
+            _id: false,
+            user : {
+                type: Schema.ObjectId,
+                ref: 'User'
+            },
+            calification: {
+                type: Number,
+                required:true,
+                min:0,
+                max:10
+            }  
+        }]
+    }    
 },{timestamps:true});
 
 Movie.plugin(AutoIncrement, {inc_field: 'movie._id' });

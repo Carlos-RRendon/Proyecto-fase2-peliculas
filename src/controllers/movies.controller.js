@@ -46,14 +46,16 @@ function addMovie(req, res) {
    
    const newMovie = new Movie({movie,score});
 
-   /* Function to validate without saving in DB
+   /* 
+   //Function to validate without saving in DB
    newMovie.validate()
-   .then( value => {res.send('Successfully added')} )
+   .then( value => {res.send(`Movie added successfully: ${JSON.stringify(score)}`)} )
    .catch( e => res.send(e.message));
    */
+  
     newMovie.save()
     .then( movie => {res.status(201).send('Movie added successfully')})
-    .catch( e => {res.status(400).send(e.message)} );
+    .catch( e => {res.status(400).send(e.message)} ); 
 };
 
 //READ
