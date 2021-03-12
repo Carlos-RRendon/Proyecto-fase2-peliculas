@@ -9,6 +9,8 @@ const {Schema, model} = mongoose;
 const uniqueValidator = require('mongoose-unique-validator');
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 
+
+
 const Movie = new Schema({
 
     movie :{
@@ -58,20 +60,23 @@ const Movie = new Schema({
         
     score: {
         type: [{
-            _id: false,
-            user : {
+            user: {
                 type: Schema.ObjectId,
-                ref: 'User'
+                ref : 'User'
             },
-            calification: {
+            rating: {
                 type: Number,
-                required:true,
-                min:0,
-                max:10
-            }  
+                required: true,
+                min : 0,
+                max : 10
+            },
+            _id: false
         }]
     }    
 },{timestamps:true});
+
+
+
 
 Movie.plugin(AutoIncrement, {inc_field: 'movie._id' });
 

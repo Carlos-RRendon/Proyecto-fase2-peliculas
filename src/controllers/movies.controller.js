@@ -5,57 +5,37 @@ const User = require('../models/User');
 //CREATE
 function addMovie(req, res) {
     //Aqui va el codigo para agregar peliculas en la DB
-    /*
-    const user = new User({
-        username: "carls.12002",
-        name: "Carlos",
-        lastName: "Ramirez",
-        email: "carlos.as@outlook.com",
-        password: "elPAtitofeo123",
-        age:23,
-        type: "admin"
-    });
-
-    const movie = new Movie({
-        movie: {
-            title: 'Star Wars',
-            image: 'path/to/image.jpg',
-            genre: ['Animation'],
-            // synopsis: 'Era una vez un niño chiquito',
-            classification: 'PG-13',
-            duration: 123,
-            director: 'Jackie Chan',
-            // cast: ['Robert Downey Jr.','Chris Hemsworth'],
-            originalLanguage: 'Español',
-            releaseYear: 1995
-        },
-        score: [
-            {
-            user : user._id,
-            calification: 9.4
-            }
-        ]
-    });
-
-    const JSONRes = {
-        user,
-        movie
-    } 
-    */
-   const {movie, score} = req.body;
    
-   const newMovie = new Movie({movie,score});
+   const {movie, score} = req.body;
 
-   /* 
+   const checkDuplicates = () => {
+       scoreArray = [];
+       score.forEach(element => {
+           if (scoreArray.includes(element.user))
+            throw new Error('User can only rate once')
+           else scoreArray.push(element.user)
+       })
+   }
+
+   try{
+       checkDuplicates();
+    }catch (e){
+        res.send(e.message)
+    }   
+    
+    const newMovie = new Movie({movie,score});   
+       
+    newMovie.save()
+    .then( movie => {res.status(201).send('Movie added successfully')})
+    .catch( e => {res.status(400).send(e.message)} );
+
+    /*
    //Function to validate without saving in DB
    newMovie.validate()
    .then( value => {res.send(`Movie added successfully: ${JSON.stringify(score)}`)} )
    .catch( e => res.send(e.message));
    */
-  
-    newMovie.save()
-    .then( movie => {res.status(201).send('Movie added successfully')})
-    .catch( e => {res.status(400).send(e.message)} ); 
+     
 };
 
 //READ

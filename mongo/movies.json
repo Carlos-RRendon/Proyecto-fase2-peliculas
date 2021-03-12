@@ -7,18 +7,18 @@
             "genre": ["Acción", "Drama"],
             "synopsis": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía.",
             "classification": "PG-13",
-            "duration": "152 mins",
+            "duration": 152,
             "director": "Christopher Nolan",
             "cast": ["Christian Bale", "Michael Caine", "Heath Ledger", "Gary Oldman", "Aaron Eckhart", "Maggie Gyllenhaal", "Morgan Freeman"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2008"} 
+            "releaseYear": 2008 
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -31,18 +31,19 @@
             "genre": ["Suspenso", "Drama", "Acción","Ciencia ficción"],
             "synopsis": "Dom Cobb es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarles los secretos de sus subconscientes. Su habilidad lo ha vuelto muy popular en el mundo del espionaje corporativo, pero ha tenido un gran costo en la gente que ama. Cobb obtiene la oportunidad de redimirse cuando recibe una tarea imposible: plantar una idea en la mente de una persona. Si tiene éxito, será el crimen perfecto, pero un enemigo se anticipa a sus movimientos.",
             "classification": "PG-13",
-            "duration": "148 minutos",
+            "duration": 148,
             "director": "Christopher Nolan",
             "cast": ["Leonardo Dicaprio", "Ken Watanabe","Joseph Gordon-Levitt", "Marion Cotillard", "Elliot Pagenota", "Tom Hardy", "Cillian Murphy", "Tom Berenger", "Michael Caine"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2010"}
+            "releaseYear": 2010
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "username": "CHarles",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -54,19 +55,19 @@
             "genre": ["Ciencia ficción"],
             "synopsis": "Gracias a un descubrimiento, un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí.",
             "classification": "PG-13",
-            "duration": "169 mins",
+            "duration": 169,
             "director": "Christopher Nolan",
             "cast": ["Matthew McConaughey","Anne Hathaway","Jessica Chastain","Bill Irwin","Ellen Burstyn","Michael Caine","Matt Damon"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2014"}
+            "releaseYear": 2014
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         },
         {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -78,18 +79,18 @@
             "genre": ["Gánsters", "Drama"],
             "synopsis": "Michael Corleone, heredero del imperio de don Vito Corleone, intenta rehabilitarse socialmente y legitimizar todas las posesiones de la familia negociando con el Vaticano. Después de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios.",
             "classification": "R",
-            "duration": "175 mins",
+            "duration": 175,
             "director": "Francis Ford Coppola",
             "cast": ["Marlon Brando","Al Pacino","Robert Duvall","James Caan","Richard Castellano","Diane Keaton"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1972"}
+            "releaseYear": 1972
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -102,18 +103,18 @@
             "genre": ["Aventuras", "Accion"],
             "synopsis": "El arqueólogo Indiana Jones necesita encontrar el Arca de la Alianza, una reliquia bíblica que contiene los Diez Mandamientos y que convierte en invencible a su poseedor. Jones deberá adelantarse a los nazis, quienes también buscan el Arca.",
             "classification": "PG",
-            "duration": "115 mins",
+            "duration": 115,
             "director": "Steven Spielberg",
             "cast": ["Harrison Ford","Karen Allen","Paul Freeman","Ronald Lacey","John Rhys-Davies","Denholm Elliott","Alfred Molina","Wolf Kahler","Anthony Higgins","Vic Tablian","Don Fellows","William Hootkins"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1981"}
+            "releaseYear": 1981
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -125,18 +126,18 @@
             "genre": ["Ciencia Ficción", "Épico"],
             "synopsis": "Aunque la Estrella de la Muerte ha sido destruida, las tropas imperiales han hecho salir a las fuerzas rebeldes de sus bases ocultas y los persiguen a través de la galaxia. Mientras, el grupo de rebeldes de Skywalker se esconde en un planeta helado.",
             "classification": "PG",
-            "duration": "127 mins",
+            "duration": 127,
             "director": "Irvin Kershner",
             "cast": ["Mark Hamill","Harrison Ford","Carrie Fisher","Billy Dee Williams","Anthony Daniels","David Prowse","Peter Mayhew","Kenny Baker","Frank Oz","James Earl Jones"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1980"}
+            "releaseYear": 1980
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -148,18 +149,18 @@
             "genre": ["Drama"],
             "synopsis": "Un hombre inocente es enviado a una corrupta penitenciaria de Maine en 1947 y sentenciado a dos cadenas perpetuas por un doble asesinato.",
             "classification": "R",
-            "duration": "142 mins",
+            "duration": 142,
             "director": "Frank Darabont",
             "cast": ["Tim Robbins","Morgan Freeman","Bob Gunton","William Sadler","Clancy Brown","Gil Bellows","Mark Rolston","James Whitmore"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1994"}
+            "releaseYear": 1994
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }] 
     },
 
@@ -171,18 +172,18 @@
             "genre": ["Terror","Suspenso","Aventura"],
             "synopsis": "Un gigantesco tiburón blanco amenaza a los habitantes y turistas de un pueblo costero. El alcalde encomienda la caza del escualo al jefe de la policía, un pescador y un científico. El grupo se da cuenta de que es un animal inteligente y violento.",
             "classification": "PG-13",
-            "duration": "124 mins",
+            "duration": 124,
             "director": "Steven Spielberg",
             "cast": ["Roy Scheider","Robert Shaw","Richard Dreyfuss","Lorraine Gary","Murray Hamilton"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1975"}
+            "releaseYear": 1975
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
     
@@ -194,18 +195,18 @@
             "genre": ["Drama","Crimen","Gánsteres"],
             "synopsis": "Henry, un niño de trece años de Brooklyn, vive fascinado con el mundo de los gánsters. Su sueño se hace realidad cuando entra en la familia Pauline.",
             "classification": "R",
-            "duration": "146 mins",
+            "duration": 146,
             "director": "Martin Scorsese",
             "cast": ["Robert De Niro","Ray Liotta","Joe Pesci","Lorraine Bracco","Paul Sorvino"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1990"}
+            "releaseYear": 1990
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
     
@@ -217,18 +218,18 @@
             "genre": ["Drama","Comedia negra"],
             "synopsis": "Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo.",
             "classification": "R",
-            "duration": "139 mins",
+            "duration": 139,
             "director": "David Fincher",
             "cast": ["Edward Norton","Brad Pitt","Helena Bonham Carter","Meat Loaf","Jared Leto"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1999"}
+            "releaseYear": 1999
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -240,18 +241,18 @@
             "genre": ["Cine policiaco"],
             "synopsis": "La vida de un boxeador, dos sicarios, la esposa de un gánster y dos bandidos se entrelaza en una historia de violencia y redención.",
             "classification": "R",
-            "duration": "154 mins",
+            "duration": 154,
             "director": "Quentin Tarantino",
             "cast": ["John Travolta","Samuel L. Jackson","Uma Thurman","Harvey Keitel","Tim Roth","Amanda Plummer","Maria de Medeiros","Ving Rhames","Eric Stoltz","Rosanna Arquette","Christopher Walken","Bruce Willis"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1994"}
+            "releaseYear": 1994
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -263,19 +264,19 @@
             "genre": ["Ciencia ficción"],
             "synopsis": "El gobierno contrata a la prestigiosa lingüista Louise Banks para que se comunique con unos alienígenas que han llegado a la Tierra. Conforme ella aprende su idioma, va experimentando regresiones muy intensas que desvelan la verdadera misión que les ha llevado hasta nuestro planeta.",
             "classification": "PG-13",
-            "duration": "116 mins",
+            "duration": 116,
             "director": "Denis Villeneuve",
             "cast": ["Amy Adams","Jeremy Renner","Forest Whitaker",
             "Michael Stuhlbarg"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2016"}
+            "releaseYear": 2016
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -287,19 +288,19 @@
             "genre": ["Acción", "Aventura","Ciencia ficción","Fantasía","Cine de superhéroes","Comedia"],
             "synopsis": "Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.",
             "classification": "PG-13",
-            "duration": "181 mins",
+            "duration": 181,
             "director": "Anthony y Joe Russo",
             "cast": ["Robert Downey Jr","Chris Evans","Chris Hemsworth",
             "Mark Ruffalo", "Paul Rudd", "Jeremy Renner", "Brie Larson", "Don Cheadle", "Karen Gillan", "Bradley Cooper", "Josh Brolin","Scarlett Johansson", "Tessa Thompson", "Benedict Cumberbatch", "Chadwick Boseman", "Elizabeth Olsen", "Sebastian Stan", "Tom Hiddleston", "Tom Holland", "Anthony Mackie", "Pom Klementieff", "Dave Bautista", "Zoe Saldana", "Chris Pratt", "Michael Douglas", "Michelle Pfeiffer", "Vin Diesel", "Samuel L. Jackson"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2019"}
+            "releaseYear": 2019
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -311,18 +312,18 @@
             "genre": ["Acción", "Aventura","Ciencia ficción","Fantasía","Superhéroes"],
             "synopsis": "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
             "classification": "PG-13",
-            "duration": "149 mins",
+            "duration": 149,
             "director": "Anthony y Joe Russo",
             "cast": ["Robert Downey Jr", "Chris Hemsworth","Mark Ruffalo","Chris Evans","Scarlett Johansson","Don Cheadle","Benedict Cumberbatch","Tom Holland","Chadwick Boseman","Zoe Saldana","Karen Gillan","Tom Hiddleston","Paul Bettany", "Elizabeth Olsen", "Anthony Mackie","Sebastian Stan","Idris Elba","Dave Bautista","Pom Klementieff", "Vin Diesel", "Bradley Cooper", "Josh Brolin","Chris Pratt"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2018"}
+            "releaseYear": 2018
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -334,19 +335,19 @@
             "genre": ["Acción", "Ciencia ficción"],
             "synopsis": "El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo de un desastre casi seguro cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial.",
             "classification": "PG-13",
-            "duration": "143 mins",
+            "duration": 143,
             "director": "Joss Whedon",
             "cast": ["Robert Downey Jr", "Chris Evans","Mark Ruffalo","Chris Hemsworth","Scarlett Johansson","Jeremy Renner","Tom Hiddleston","Clark Gregg", "Cobie Smulders", "Stellan Skarsgard", "Samuel L. Jackson"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2012"}
+            "releaseYear": 2012
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         },
          {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -358,18 +359,18 @@
             "genre": ["Ciencia Ficcion"],
             "synopsis": "Una imponente estructura negra proporciona una conexión entre el pasado y el futuro en esta enigmática adaptación de un cuento del venerado autor de ciencia ficción Arthur C. Clarke. Cuando el Dr. Dave Bowman (Keir Dullea) y otros astronautas son enviados a una misión misteriosa, el sistema informático de su nave, HAL, comienza a mostrar un comportamiento cada vez más extraño, lo que lleva a un tenso enfrentamiento entre el hombre y la máquina que resulta en una experiencia alucinante. Caminata por el espacio y el tiempo.",
             "classification": "PG-13",
-            "duration": "142 mins",
+            "duration": 142,
             "director": "Stanley Kubrick",
             "cast": ["Keir Dullea", "Gary Lockwood", "William Sylvester", "Daniel Richter", "Leaonard Rossiter", "Douglas Rain"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1968"}
+            "releaseYear": 1968
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -381,18 +382,18 @@
             "genre": ["Accion", "Drama"],
             "synopsis": "Sufriendo de insomnio, el perturbado solitario Travis Bickle (Robert De Niro) acepta un trabajo como taxista de la ciudad de Nueva York, recorriendo las calles todas las noches, cada vez más alejado de la realidad mientras sueña con limpiar la ciudad sucia. Cuando Travis conoce a la guapa trabajadora de campaña Betsy (Cybill Shepherd), se obsesiona con la idea de salvar el mundo, primero conspirando para asesinar a un candidato presidencial y luego dirigiendo su atención a rescatar a la prostituta Iris (Jodie Foster) de 12 años.",
             "classification": "R",
-            "duration": "113 mins",
+            "duration": 113,
             "director": "Martin Scorsese",
             "cast": ["Robert De Niro", "Jodie Foster", "Cybill Shepherd", "Harvey Keitel", "Victor Argo", "Peter Boyle"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1976"}
+            "releaseYear": 1976
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -404,18 +405,18 @@
             "genre": ["Drama"],
             "synopsis": "Rick Blaine (Humphrey Bogart), dueño de un club nocturno en Casablanca, descubre que su antiguo amor Ilsa (Ingrid Bergman) está en la ciudad con su esposo, Victor Laszlo (Paul Henreid). Laszlo es un rebelde famoso, y con los alemanes detrás de él, Ilsa sabe que Rick puede ayudarlos a salir del país.",
             "classification": "PG",
-            "duration": "102 mins",
+            "duration": 102,
             "director": "Michael Curtiz",
             "cast": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid","Claude Rains","Conrad Veidt","Sydney Greenstreet","Peter Lorre","S. K. Sakall","Madeleine LeBeau"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1942"}
+            "releaseYear": 1942
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -427,18 +428,18 @@
             "genre": ["Drama", "Crimen"],
             "synopsis": "La convincente secuela de 'El Padrino', que contrasta la vida de padre e hijo de Corleone. Traza los problemas de Michael Corleone (Al Pacino) en 1958 y el de un joven inmigrante Vito Corleone (Robert De Niro) en Hell's Kitchen de 1917. Michael sobrevive a muchas desgracias y Vito se introduce en una vida de delincuencia.",
             "classification": "R",
-            "duration": "200 mins",
+            "duration": 200,
             "director": "Francis Ford Coppola",
             "cast": ["Al Pacino","Robert Duvall","Diane Keaton","Robert De Niro","John Cazale","Talia Shire","Lee Strasberg","Michael V. Gazzo"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1974"}
+            "releaseYear": 1974
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -450,19 +451,19 @@
             "genre": ["Ciencia Ficcion", "Misterio"],
             "synopsis": "Deckard (Harrison Ford) es obligado por el jefe de la policía (M. Emmet Walsh) a continuar con su antiguo trabajo como Cazador de Replicantes. Su tarea: eliminar a cuatro Replicantes fugados de las colonias que han regresado a la Tierra. Antes de comenzar el trabajo, Deckard va a Tyrell Corporation y conoce a Rachel (Sean Young), una chica Replicante de la que se enamora.",
             "classification": "R",
-            "duration": "122 mins",
+            "duration": 122,
             "director": "Ridley Scott",
             "cast": ["Harrison Ford", "Rutger Hauer", "Sean Young", "Edward James Olmos", "M. Emmet Walsh", "Daryl Hannah"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1982"}
+            "releaseYear": 1982
         },
-        "calificacion": [{
-            "user": 1,
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
 
-            "calificacion": 9
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -474,18 +475,18 @@
             "genre": ["Suspenso", "Misterio"],
             "synopsis": "Ambientada en la Viena de posguerra, Austria, 'El tercer hombre' está protagonizada por Joseph Cotten como Holly Martins, una escritora de westerns pulp, que llega sin un centavo como invitada de su amigo de la infancia Harry Lime (Orson Welles), solo para encontrarlo muerto. Martins desarrolla una teoría de la conspiración después de enterarse de un 'tercer hombre' presente en el momento de la muerte de Harry, chocando con la interferencia del oficial británico mayor Calloway (Trevor Howard) y enamorándose perdidamente de la amante de Harry, Anna ( Alida Valli).",
             "classification": "PG",
-            "duration": "104 mins",
+            "duration": 104,
             "director": "Carol Reed",
             "cast": ["Orson Welles", "Joseph Cotten", "Trevor Howard", "Alida Valli", "Paul Hoerbiger", "Ernst Deutsh"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1949"}
+            "releaseYear": 1949
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -497,18 +498,18 @@
             "genre": ["Aventura", "Ciencia Ficcion"],
             "synopsis": "Las Fuerzas Imperiales, bajo las órdenes del cruel Darth Vader (David Prowse), retienen a la Princesa Leia (Carrie Fisher) como rehén, en sus esfuerzos por sofocar la rebelión contra el Imperio Galáctico. Luke Skywalker (Mark Hamill) y Han Solo (Harrison Ford), capitán del Halcón Milenario, trabajan junto con el simpático dúo de droides R2-D2 (Kenny Baker) y C-3PO (Anthony Daniels) para rescatar a la bella princesa, ayudar al Rebel Alliance y restaurar la libertad y la justicia en la Galaxia.",
             "classification": "PG",
-            "duration": "121 mins",
+            "duration": 121,
             "director": "George Lucas",
             "cast": ["Mark Hamill", "Harrison Ford", "Carrie Fisher", "Alec Guinness", "Peter Cushing", "Anthony Daniels"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1977"}
+            "releaseYear": 1977
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -520,18 +521,18 @@
             "genre": ["Aventura", "Comedia"],
             "synopsis": "En este clásico de ciencia ficción de la década de 1980, el adolescente de un pequeño pueblo de California, Marty McFly (Michael J. Fox), regresa a los años 50 cuando un experimento de su excéntrico amigo científico Doc Brown (Christopher Lloyd) sale mal. Viajando a través del tiempo en un automóvil DeLorean modificado, Marty se encuentra con versiones jóvenes de sus padres (Crispin Glover, Lea Thompson) y debe asegurarse de que se enamoren o dejará de existir. Aún más abrumador, Marty tiene que volver a su propio tiempo y salvar la vida de Doc Brown.",
             "classification": "PG",
-            "duration": "116 mins",
+            "duration": 116,
             "director": "Robert Zemeckis",
             "cast": ["Michael J. Fox","Christopher Lloyd","Crispin Glover","Lea Thompson"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1985"}
+            "releaseYear":1985
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -543,18 +544,18 @@
             "genre": ["Viejo Oeste"],
             "synopsis": "En el suroeste durante la Guerra Civil, un misterioso extraño, Joe (Clint Eastwood), y un forajido mexicano, Tuco (Eli Wallach), forman una sociedad incómoda: Joe entrega al bandido por el dinero de la recompensa y luego lo rescata. lo están ahorcando. Cuando el disparo de Joe en la soga sale mal durante una escapada, un Tuco furioso intenta asesinarlo. Sin embargo, los hombres vuelven a formar equipo abruptamente para vencer a un criminal sádico y al ejército de la Unión y encontrar $ 20,000 que un soldado ha enterrado en el desierto.",
             "classification": "R",
-            "duration": "161 mins",
+            "duration": 161,
             "director": "Sergio Leone",
             "cast": ["Clint Eastwood","Eli Wallach","Lee Van Cleef"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1967"}
+            "releaseYear": 1967
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -566,18 +567,18 @@
             "genre": ["Comedy"],
             "synopsis": "Una película sobre lo que podría suceder si la persona equivocada presionó el botón equivocado, y jugó la situación para reír. El general de la Fuerza Aérea de los Estados Unidos, Jack Ripper, se vuelve completamente loco y envía su ala de bombardero para destruir la U.R.S.S. Cree que los comunistas están conspirando para contaminar los 'preciosos fluidos corporales' del pueblo estadounidense.",
             "classification": "PG",
-            "duration": "113 mins",
+            "duration": 113,
             "director": "Stanley Kubrick",
             "cast": ["Peter Sellers","George C. Scott","Keenan Wynn"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1964"}
+            "releaseYear": 1964
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -589,18 +590,18 @@
             "genre": ["Comedy"],
             "synopsis": "Después de presenciar un asesinato de la mafia, el hábil saxofonista Joe (Tony Curtis) y su sufrido amigo Jerry (Jack Lemmon) improvisan un plan rápido para escapar de Chicago con sus vidas. Disfrazándose de mujeres, se unen a una banda de jazz de mujeres y se suben a un tren con destino a la soleada Florida. Mientras Joe finge ser millonario para ganarse a la sexy cantante de la banda, Sugar (Marilyn Monroe), Jerry se ve perseguido por un verdadero millonario (Joe E. Brown) mientras las cosas se calientan y los mafiosos se acercan.",
             "classification": "PG",
-            "duration": "120 mins",
+            "duration": 120,
             "director": "Billy Wilder",
             "cast": ["Tony Curtis","Jack Lemmon","Marilyn Monroe","George Raft"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1959"}
+            "releaseYear": 1959
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -612,18 +613,18 @@
             "genre": ["Drama"],
             "synopsis": "Cuando se asigna a un periodista que descifre las últimas palabras del magnate de los periódicos Charles Foster Kane (Orson Welles), su investigación revela gradualmente el fascinante retrato de un hombre complejo que se elevó de la oscuridad a alturas asombrosas. Aunque el amigo y colega de Kane, Jedediah Leland (Joseph Cotten), y su amante, Susan Alexander (Dorothy Comingore), arrojaron fragmentos de luz sobre la vida de Kane, el periodista teme que nunca pueda penetrar el misterio de la última palabra del esquivo hombre, 'Rosebud'",
             "classification": "PG",
-            "duration": "120 mins",
+            "duration": 120,
             "director": "Orson Welles",
             "cast": ["Orson Welles","Joseph Cotten","Ruth Warrick","Everett Sloane"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1941"}
+            "releaseYear": 1941
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -635,18 +636,18 @@
             "genre": ["Misterio", "Accion", "Suspenso"],
             "synopsis": "El policía de la ciudad de Nueva York, John McClane (Bruce Willis), está visitando a su ex esposa (Bonnie Bedelia) y a sus dos hijas en Nochebuena. Se une a ella en una fiesta navideña en la sede de la empresa japonesa para la que trabaja. Pero las festividades son interrumpidas por un grupo de terroristas que se apoderan del exclusivo rascacielos y de todos los que están en él. Muy pronto McClane se da cuenta de que nadie puede salvar a los rehenes, excepto él.",
             "classification": "R",
-            "duration": "131 mins",
+            "duration": 131,
             "director": "John McTiernan",
             "cast": ["Bruce Willis","Alan Rickman","Bonnie Bedelia","Paul Gleason"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1988"}
+            "releaseYear": 1988
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -658,18 +659,18 @@
             "genre": ["Aventura", "Fantasia"],
             "synopsis": "El futuro de la civilización depende del destino del Anillo Único, que se ha perdido durante siglos. Fuerzas poderosas son implacables en su búsqueda. Pero el destino lo ha puesto en manos de un joven Hobbit llamado Frodo Baggins (Elijah Wood), que hereda el Anillo y se convierte en leyenda. Una tarea abrumadora le espera a Frodo cuando se convierta en el Portador del Anillo: destruir el Anillo Único en los fuegos del Monte Doom, donde se forjó.",
             "classification": "PG-13",
-            "duration": "173 mins",
+            "duration": 173,
             "director": "Peter Jackson",
             "cast": ["Elijah Wood","Ian McKellen","Liv Tyler","Viggo Mortensen","Sean Astin"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "2001"}
+            "releaseYear": 2001
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -681,18 +682,18 @@
             "genre": ["Ciencia Ficcion", "Accion","Terror"],
             "synopsis": "Después de flotar en el espacio durante 57 años, un equipo de rescate del espacio profundo encuentra el transbordador del teniente Ripley (Sigourney Weaver). Al llegar a LV-426, los marines encuentran solo un sobreviviente, una niña de nueve años llamada Newt (Carrie Henn). Pero incluso estos marines curtidos en la batalla con todas las armas más modernas no son rival para los cientos de alienígenas que han invadido la colonia.",
             "classification": "R",
-            "duration": "137 mins",
+            "duration": 137,
             "director": "James Cameron",
             "cast": ["Sigourney Weaver","Carrie Henn","Michael Biehn","Paul Reiser","Lance Henriksen"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date" : "1986"}
+            "releaseYear": 1986
         },
-        "calificacion": [{
-            "user": 1,
-            "calificacion": 9
+        "score": [{
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 9
         }, {
-            "user": 2,
-            "calificacion": 7.8
+            "user": "604b1bff4933693bbcc0dc2a",
+            "rating": 7.8
         }]
     },
 
@@ -704,19 +705,19 @@
             "genre": ["Romance", "Drama", "History"],
             "synopsis": "Presented as originally released in 1939. Includes themes and character depictions which may be offensive and problematic to contemporary audiences. Epic Civil War drama focuses on the life of petulant Southern belle Scarlett O'Hara. Starting with her idyllic life on a sprawling plantation, the film traces her survival through the tragic history of the South during the Civil War and Reconstruction, and her tangled love affairs with Ashley Wilkes and Rhett Butler.",
             "classification": "G",
-            "duracion": "3h 42m",
+            "duration": 222,
             "director": "Victor Fleming",
             "cast": ["Clark Gable", "Vivien Leigh", "Leslie Howard", "Olivia de Havilland", "Thomas Mitchell", "Barbara O'Neil"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"1939"}
+            "releaseYear": 1939
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -728,19 +729,19 @@
             "genre": ["Western", "Action"],
             "synopsis": "The true story of fast-draws and wild rides, battles with posses, train and bank robberies, a torrid love affair and a new lease on outlaw life in far away Bolivia. It is also a character study of a remarkable friendship between Butch - possibly the most likeable outlaw in frontier history - and his closest associate, the fabled, ever-dangerous Sundance Kid.",
             "classification": "PG",
-            "duracion": "1h 50m",
+            "duration": 110,
             "director": "George Roy Hill",
             "cast": ["Paul Newman", "Robert Redford", "Katharine Ross"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"1969"}
+            "releaseYear": 1969
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -752,19 +753,19 @@
             "genre": ["Fantasy", "Action"],
             "synopsis": "Spider-Man centers on student Peter Parker (Tobey Maguire) who, after being bitten by a genetically-altered spider, gains superhuman strength and the spider-like ability to cling to any surface. He vows to use his abilities to fight crime, coming to understand the words of his beloved Uncle Ben: 'With great power comes great responsibility.'",
             "classification": "PG-13",
-            "duracion": "1h 56m",
+            "duration": 116,
             "director": "Sam Raimi",
             "cast": ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2002"}
+            "releaseYear": 2002
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 10
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 10
             },
             {
-                "user": 2,
-                "calificacion": 10
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 10
             }]
     },
 
@@ -776,19 +777,19 @@
             "genre": ["Fantasy", "Adventure", "Action"],
             "synopsis": "When a failed nuclear fusion experiment results in an explosion that kills his wife, Dr. Otto Octavius (Alfred Molina) is transformed into Dr. Octopus, a cyborg with deadly metal tentacles. Doc Ock blames Spider-Man (Tobey Maguire) for the accident and seeks revenge. Meanwhile, Spidey's alter ego, Peter Parker, faces fading powers and self-doubt. Complicating matters are his best friend's (James Franco) hatred for Spider-Man and his true love's (Kirsten Dunst) sudden engagement to another man.",
             "classification": "PG-13",
-            "duracion": "2h 2m",
+            "duration": 122,
             "director": "Sam Raimi",
             "cast": ["Tobey Maguire", "Kirsten Dunst", "James Franco", "Alfred Molina"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2004"}
+            "releaseYear": 2004
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 10
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 10
             },
             {
-                "user": 2,
-                "calificacion": 10
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 10
             }]
     },
 
@@ -800,19 +801,19 @@
             "genre": ["Action", "Fantasy", "Adventure"],
             "synopsis": "Peter Parker (Tobey Maguire) and M.J. (Kirsten Dunst) seem to finally be on the right track in their complicated relationship, but trouble looms for the superhero and his lover. Peter's Spider-Man suit turns black and takes control of him, not only giving Peter enhanced power but also bringing out the dark side of his personality. Peter must overcome the suit's influence as two supervillains, Sandman and Venom, rise up to destroy him and all those he holds dear.",
             "classification": "PG-13",
-            "duracion": "2h 13m",
+            "duration": 133,
             "director": "Sam Raimi",
             "cast": ["Tobey Maguire", "Kirsten Dunst", "James Franco", "Thomas Haden Church"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2007"}
+            "releaseYear": 2007
         },
-        "calificacion": [{
-                "user":1,
-                "calificacion": 9
+        "score": [{
+                "user":"604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user":2,
-                "calificacion": 10
+                "user":"604b1bff4933693bbcc0dc2a",
+                "rating": 10
             }]  
     },
 
@@ -824,19 +825,19 @@
             "genre": ["Sci Fi", "Action"],
             "synopsis": "Sam (Garrett Hedlund), the son of famous video-game developer Kevin Flynn (Jeff Bridges), has been haunted for a long time by his father's mysterious disappearance. A strange signal draws Sam to Flynn's Arcade, and he is pulled into the same cyberworld in which his father, its creator, has been trapped for 20 years. With fearless warrior Quorra (Olivia Wilde), Kevin and Sam seek to escape from a universe that, while magnificent, is far more advanced and dangerous than Kevin had ever imagined.",
             "classification": "PG",
-            "duracion": "2h 5m",
+            "duration": 125,
             "director": "Joseph Kosinski",
             "cast": ["Jeff Bridges", "Garrett Hedlund", "Olivia Wilde"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2010"}
+            "releaseYear": 2010
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -848,19 +849,19 @@
             "genre": ["Comedy", "Romance", "Drama"],
             "synopsis": "A sensitive and soulful man earns a living by writing personal letters for other people. Left heartbroken after his marriage ends, Theodore (Joaquin Phoenix) becomes fascinated with a new operating system which reportedly develops into an intuitive and unique entity in its own right. He starts the program and meets 'Samantha' (Scarlett Johansson), whose bright voice reveals a sensitive, playful personality. Though 'friends' initially, the relationship soon deepens into love.",
             "classification": "R",
-            "duracion": "1h 59m",
+            "duration": 119,
             "director": "Spike Jonze",
             "cast": ["Joaquin Phoenix", "Amy Adams", "Scarlett Johansson", "Rooney Mara", "Chris Pratt", "Olivia Wilde"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2014"}
+            "releaseYear": 2014
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }] 
     },
 
@@ -872,19 +873,19 @@
             "genre": ["Drama", "Mystery", "Thriller"],
             "synopsis": "A contract killer uncovers a conspiracy while trying to save a kidnapped teen from a life of prostitution.",
             "classification": "R",
-            "duracion": "1h 30m",
+            "duration": 90,
             "director": "Lynne Ramsay",
             "cast": ["Joaquin Phoenix", "Ekaterina Samsonov", "Alessandro Nivola", "Alex Manette"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2018"}
+            "releaseYear": 2018
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -896,19 +897,19 @@
             "genre": ["Drama", "Mystery", "Thriller"],
             "synopsis": "Two lighthouse keepers try to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
             "classification": "R",
-            "duracion": "1h 50m",
+            "duration": 110,
             "director": "Robert Eggers",
             "cast": ["Robert Pattinson", "Willem Dafoe"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2019"}
+            "releaseYear": 2019
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -920,19 +921,19 @@
             "genre": ["Comedy", "Biography", "Drama"],
             "synopsis": "In 1987, Jordan Belfort (Leonardo DiCaprio) takes an entry-level job at a Wall Street brokerage firm. By the early 1990s, while still in his 20s, Belfort founds his own firm, Stratton Oakmont. Together with his trusted lieutenant (Jonah Hill) and a merry band of brokers, Belfort makes a huge fortune by defrauding wealthy investors out of millions. However, while Belfort and his cronies partake in a hedonistic brew of sex, drugs and thrills, the SEC and the FBI close in on his empire of excess.",
             "classification": "R",
-            "duracion": "2h 59m",
+            "duration": 119,
             "director": "Martin Scorsese",
             "cast": ["Leonardo DiCaprio", "Jonah Hill", "Margot Robbie", "Jon Bernthal"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2013"}
+            "releaseYear": 2013
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -944,19 +945,19 @@
             "genre": ["Comedy", "Drama"],
             "synopsis": "Jojo is a lonely German boy who discovers that his single mother is hiding a Jewish girl in their attic. Aided only by his imaginary friend -- Adolf Hitler -- Jojo must confront his blind nationalism as World War II continues to rage on.",
             "classification": "PG-13",
-            "duracion": "1h 48m",
+            "duration": 108,
             "director": "Taika Waititi",
             "cast": ["Roman Griffin Davis", "Thomasin McKenzie", "Scarlett Johansson", "Taika Waititi"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2019"}
+            "releaseYear": 2019
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -968,19 +969,19 @@
             "genre": ["Comedy"],
             "synopsis": "Thomas (Thomas Mann), Costa (Oliver Cooper) and JB (Jonathan Daniel Brown) are three anonymous high-school seniors who are determined to finally make their mark. But how to make themselves unforgettable in the annals of high-school history? With an epic party, of course! The idea is innocent enough, but nothing could prepare the three friends for this shindig. As word of the soiree's awesomeness spreads, dreams are ruined, records are blemished, and legends are born.",
             "classification": "R",
-            "duracion": "1h 28m",
+            "duration": 88,
             "director": "Nima Nourizadeh",
             "cast": ["Thomas Mann", "Oliver Cooper", "Jonathan Daniel Brown", "Kirby Bliss Blanton"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2012"}
+            "releaseYear": 2012
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -992,19 +993,19 @@
             "genre": ["Comedy", "Drama", "Mystery", "Thriller"],
             "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
             "classification": "R",
-            "duracion": "2h 12m",
+            "duration": 132,
             "director": "Bong Joon-ho",
             "cast": ["Song Kang-ho", "Yeo-jeong Jo", "So-dam Park", "Woo-sik Choi"],
             "originalLanguage": "Korean",
-            "releaseYear": { "$date":"2019"}
+            "releaseYear": 2019
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -1016,19 +1017,19 @@
             "genre": ["Crime", "Drama", "Mystery", "Thriller"],
             "synopsis": "A widow (Kim Hye-ja) resides with her mentally challenged son (Won Bin) in a small South Korean town, where she scrapes out a living selling medicinal herbs. Mother and son are plunged into a nightmare when the body of a murdered young girl is discovered. Circumstantial evidence indicates the son's involvement, and he becomes the prime suspect during the sloppy police investigation. Betrayed by the legal system, the mother takes the law into her own hands to clear her son's name.",
             "classification": "R",
-            "duracion": "2h 8m",
+            "duration": 128,
             "director": "Joon-ho Bong",
             "cast": ["Kim Hye-ja", "Won Bin"],
             "originalLanguage": "Korean",
-            "releaseYear": { "$date":"2010"}
+            "releaseYear": 2010
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]
     },
 
@@ -1040,19 +1041,19 @@
             "genre": ["Drama"],
             "synopsis": "Father Amaro (Gael García Bernal), a young Roman Catholic priest, is a new arrival in a small Mexican town. Assigned to help the older Father Benito (Sancho Gracia), Amaro gradually discovers that his elder is not only involved in an affair, but also building a hospital with help from a local drug czar. Struggling with temptation and sin in his own right, Amaro begins a romance with Amelia (Ana Claudia Talancón), a beautiful teen who dotes on him -- but the relationship has dire consequences.",
             "classification": "R",
-            "duracion": "1h 58m",
+            "duration": 118,
             "director": "Carlos Carrera",
             "cast": ["Gael García Bernal", "Ana Claudia Talancón", "Damián Alcázar"],
             "originalLanguage": "Español",
-            "releaseYear": { "$date":"2002"}
+            "releaseYear": 2002
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 7.8
             }]  
     },
 
@@ -1064,19 +1065,19 @@
             "genre": ["Drama", "Mystery", "Thriller"],
             "synopsis": "After several years of living with a cult, Martha (Elizabeth Olsen) finally escapes and calls her estranged sister, Lucy (Sarah Paulson), for help. Martha finds herself at the quiet Connecticut home Lucy shares with her new husband, Ted (Hugh Dancy), but the memories of what she experienced in the cult make peace hard to find. As flashbacks continue to torment her, Martha fails to shake a terrible sense of dread, especially in regard to the cult's manipulative leader (John Hawkes).",
             "classification": "R",
-            "duracion": "1h 41m",
+            "duration": 101,
             "director": "Sean Durkin",
             "cast": ["Elizabeth Olsen", "Sarah Paulson", "John Hawkes"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2011"}
+            "releaseYear": 2011
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc28",
+                "rating": 7.8
             }]
     },
 
@@ -1088,20 +1089,20 @@
             "genre": ["Mystery", "Thriller"],
             "synopsis": "Ever since his father died, young Kale (Shia LaBeouf) has become increasingly sullen and withdrawn, until he finds himself under house arrest. With cabin fever setting in, he turns his attention to spying on his neighbors, becoming increasingly suspicious that one of them is a serial killer. However, he wonders if he is right, or if his overactive imagination is getting the better of him.",
             "classification": "PG-13",
-            "duracion": "1h 45m",
+            "duration": 105,
             "director": "D.J. Caruso",
             "cast": ["Shia LaBeouf", "David Morse", "Sarah Roemer"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2007"}
+            "releaseYear": 2007
         },
-        "calificacion": [{
-                "user": 1,
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
     
-                "calificacion": 9
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc28",
+                "rating": 7.8
             }]
     },
 
@@ -1113,20 +1114,20 @@
             "genre": ["Drama", "Comedy"],
             "synopsis": "Actor Rick Dalton gained fame and fortune by starring in a 1950s television Western, but is now struggling to find meaningful work in a Hollywood that he doesn't recognize anymore. He spends most of his time drinking and palling around with Cliff Booth, his easygoing best friend and longtime stunt double. Rick also happens to live next door to Roman Polanski and Sharon Tate -- the filmmaker and budding actress whose futures will forever be altered by members of the Manson Family.",
             "classification": "R",
-            "duracion": "2h 39m",
+            "duration": 159,
             "director": "Quentin Tarantino",
             "cast": ["Leonardo DiCaprio", "Brad Pitt", "Margot Robbie", "Dakota Fanning"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2019"}
+            "releaseYear": 2019
         },
-        "calificacion": [{
-                "user": 1,
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
     
-                "calificacion": 9
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc28",
+                "rating": 7.8
             }]
     },
 
@@ -1138,19 +1139,19 @@
             "genre": ["Comedy", "Drama", "War"],
             "synopsis": "It is the first year of Germany's occupation of France. Allied officer Lt. Aldo Raine (Brad Pitt) assembles a team of Jewish soldiers to commit violent acts of retribution against the Nazis, including the taking of their scalps. He and his men join forces with Bridget von Hammersmark, a German actress and undercover agent, to bring down the leaders of the Third Reich. Their fates converge with theater owner Shosanna Dreyfus, who seeks to avenge the Nazis' execution of her family.",
             "classification": "R",
-            "duracion": "2h 32m",
+            "duration": 152,
             "director": "Quentin Tarantino",
             "cast": ["Brad Pitt", "Mélanie Laurent", "Christoph Waltz", "Michael Fassbender"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2009"}
+            "releaseYear": 2009
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc28",
+                "rating": 7.8
             }]
     },
 
@@ -1162,19 +1163,19 @@
             "genre": ["Biography", "Drama", "History"],
             "synopsis": "American automotive designer Carroll Shelby and fearless British race car driver Ken Miles battle corporate interference, the laws of physics and their own personal demons to build a revolutionary vehicle for the Ford Motor Co. Together, they plan to compete against the race cars of Enzo Ferrari at the 24 Hours of Le Mans in France in 1966.",
             "classification": "PG-13",
-            "duracion": "2h 32m",
+            "duration": 152,
             "director": "James Mangold",
             "cast": ["Matt Damon", "Christian Bale", "Jon Bernthal", "Caitriona Balfe"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2019"}
+            "releaseYear": 2019
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [{
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
+                "user": "604b1bff4933693bbcc0dc28",
+                "rating": 7.8
             }]
     },
 
@@ -1186,20 +1187,22 @@
             "genre": ["Drama", "War", "History"],
             "synopsis": "In April 1945, the Allies are making their final push in the European theater. A battle-hardened Army sergeant named Don 'Wardaddy' Collier (Brad Pitt), leading a Sherman tank and a five-man crew, undertakes a deadly mission behind enemy lines. Hopelessly outnumbered, outgunned and saddled with an inexperienced soldier (Logan Lerman) in their midst, Wardaddy and his men face overwhelming odds as they move to strike at the heart of Nazi Germany.",
             "classification": "R",
-            "duracion": "2h 14m",
+            "duration": 134,
             "director": "David Ayer",
             "cast": ["Brad Pitt", "Shia LaBeouf", "Logan Lerman", "Michael Peña", "Jon Bernthal"],
             "originalLanguage": "Inglés",
-            "releaseYear": { "$date":"2014"}
+            "releaseYear": 2014
         },
-        "calificacion": [{
-                "user": 1,
-                "calificacion": 9
+        "score": [
+            {
+                "user": "604b1bff4933693bbcc0dc2a",
+                "rating": 9
             },
             {
-                "user": 2,
-                "calificacion": 7.8
-            }]
+                "user": "604b1bff4933693bbcc0dc28",
+                "rating": 7.8
+            }
+        ]
     }
    
 ]
