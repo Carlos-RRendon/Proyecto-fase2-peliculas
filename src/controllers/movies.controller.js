@@ -44,14 +44,17 @@ movieCtrl.addMovie = (req, res) => {
 movieCtrl.getMovies = async (req, res,next) =>{
 
     if(req.params.id){
-        try{
-            const movie = await Movie.findById(req.params.id)
-            res.send (movie)
-        } catch(e){ e => res.rend(e) }
+            Movie.findById(req.params.id)
+            .then( result => res.send (result))
+            .catch(e => res.send('Not found')) 
     } else{
         const movies = await Movie.find({})
-        res.send( {movies})
+        res.send({movies})
     } 
+};
+
+movieCtrl.findByAttribs = (req, res) =>{
+    res.send('Hola')
 };
 
 
