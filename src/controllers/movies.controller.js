@@ -5,7 +5,7 @@ const User = require('../models/User');
 const movieCtrl = {}
 
 //CREATE
-movieCtrl.addMovie = (req, res) => {
+movieCtrl.addMovie = (req, res,next) => {
     //Aqui va el codigo para agregar peliculas en la DB
    
    const {movie, score} = req.body;
@@ -28,8 +28,10 @@ movieCtrl.addMovie = (req, res) => {
     const newMovie = new Movie({movie,score});   
        
     newMovie.save()
-    .then( movie => {res.status(201).send(`Movie added successfully ID:${movie._id} `)})
-    .catch( e => {res.status(400).send(e.message)} );
+    .then( movie => {
+        res.status(201).send(`Movie added successfully ID:${movie._id} `)
+    })
+    .catch( next );
 
     /*
    //Function to validate without saving in DB
@@ -53,11 +55,57 @@ movieCtrl.getMovies = async (req, res,next) =>{
     } 
 };
 
-movieCtrl.findByAttribs = (req, res) =>{
+movieCtrl.findByAttribs = async (req, res,next) =>{
+    let params = req.query
+    let key = Object.keys(params)[0]
     
-    params = req.query
+    switch (key) {
+        case 'genre':
+            
+            //console.log('Search by genre', regex);
+            break;
+        case 'cast':
+            //res.send('Search by cast');
+            break;
+        case 'originalLanguage':
+            //res.send('Search by original language');
+            break;
+        case '_id':
+            //res.send('Search by _id');
+            break;
+        case 'title':
+            //res.send('Search by title');
+            break;
+        case 'image':
+            //res.send('Search by image');
+            break;
+        case 'synopsis':
+            //res.send('Search by synopsis');
+            break;
+        case 'classification':
+            //res.send('Search by classification');
+            break;
+        case 'duration':
+            //res.send('Search by duration');
+            break;
+        case 'director':
+            //res.send('Search by director');
+            break;
+        case 'releaseYear':
+            //res.send('Search by release year');
+            break;
+        default:
+            //res.send('your search criteria does not match')
+            break;
+    };
 
-    res.send({params})
+    var attrib = `movie.${key}`;
+    regex = new RegExp(params[key],'i')
+    movie = await Movie.find()
+    .where(attrib)
+    .equals(regex)
+    .exec()
+    res.send(movie)
     
 };
 
@@ -67,8 +115,9 @@ movieCtrl.modifyMovie = (req, res) =>{
     res.send("Funciono")
 };
 
+
 //DELETE
-movieCtrl.deleteMovie = async (req, res) =>{
+movieCtrl.deleteMovie = (req, res) =>{
     movieId = req.params.id
     Movie.findByIdAndDelete(movieId)
     .then( movie => {
@@ -78,9 +127,6 @@ movieCtrl.deleteMovie = async (req, res) =>{
     .catch(e => res.send(`Error ${e.message}`))
 };
 
-movieCtrl.addScore = (req, res) =>{
-    res.send("Funciono")
-}
 
 //Exportamos las funciones definidas
 module.exports = movieCtrl

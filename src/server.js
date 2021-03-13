@@ -18,7 +18,7 @@ app.set('host',HOST);
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 app.use(cors());
-//app.use(morgan('dev'));
+app.use(morgan('dev'));
 
 
 
