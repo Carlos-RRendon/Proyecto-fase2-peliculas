@@ -51,17 +51,31 @@ movieCtrl.getMovies = async (req, res,next) =>{
             .then( result => res.send (result))
             .catch(e => res.send('Not found')) 
     } else{
+        if (req.query){
+            const limit= parseInt(Object.values(req.query)[0])
+            try{
+                const movies = await Movie.find()
+                .limit(limit)
+                .exec()
+                res.send(movies)
+            } catch (e) {next}
+            
+        }else{
         const movies = await Movie.find({})
         res.send({movies})
+        }
+
     } 
 };
 
 movieCtrl.findByAttribs = async (req, res,next) =>{
-    let params = req.query
-    let key = Object.keys(params)[0]
+          
+    
+    let params = req.query;
+    let key = Object.keys(params)[0];
     let attrib = `movie.${key}`;
     let value = new RegExp(params[key],'i');
-    
+
     switch (key) {
         
         case '_id':
@@ -85,7 +99,7 @@ movieCtrl.findByAttribs = async (req, res,next) =>{
             break;
 
         default:
-            res.send('your search criteria does not match')
+            if ( !['genre','title','director','cast','originalLanguage','classification'].includes(key)) res.send('your search criteria does not match')
             break;
     };
 
@@ -94,7 +108,8 @@ movieCtrl.findByAttribs = async (req, res,next) =>{
       .where(attrib)
       .equals(value)
       .exec()
-      res.send(movie)
+      if (!movie) res.send("Sorry we couldn't find anything for your search, please try again");
+      else res.send(movie);
       } catch (e) { next }
     
     
