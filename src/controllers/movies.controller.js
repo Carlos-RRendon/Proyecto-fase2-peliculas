@@ -24,7 +24,7 @@ movieCtrl.addMovie = (req, res,next) => {
     }catch (e){
         res.send(e.message)
     }   
-    
+    movie.releaseYear = movie.releaseYear.toString()
     const newMovie = new Movie({movie,score});   
        
     newMovie.save()
@@ -37,8 +37,9 @@ movieCtrl.addMovie = (req, res,next) => {
    //Function to validate without saving in DB
    newMovie.validate()
    .then( value => {res.send(`Movie added successfully: ${JSON.stringify(score)}`)} )
-   .catch( e => res.send(e.message));
+   .catch( e => res.send(next()));
    */
+   
      
 };
 
@@ -58,54 +59,44 @@ movieCtrl.getMovies = async (req, res,next) =>{
 movieCtrl.findByAttribs = async (req, res,next) =>{
     let params = req.query
     let key = Object.keys(params)[0]
+    let attrib = `movie.${key}`;
+    let value = new RegExp(params[key],'i');
     
     switch (key) {
-        case 'genre':
-            
-            //console.log('Search by genre', regex);
-            break;
-        case 'cast':
-            //res.send('Search by cast');
-            break;
-        case 'originalLanguage':
-            //res.send('Search by original language');
-            break;
+        
         case '_id':
-            //res.send('Search by _id');
+            value = params[key];
             break;
-        case 'title':
-            //res.send('Search by title');
-            break;
+        
         case 'image':
-            //res.send('Search by image');
+            res.send('Cannot search by image');
             break;
+
         case 'synopsis':
-            //res.send('Search by synopsis');
+            res.send('Searching by synopsis has no sense');
             break;
-        case 'classification':
-            //res.send('Search by classification');
-            break;
+
         case 'duration':
-            //res.send('Search by duration');
+            value = params[key]
             break;
-        case 'director':
-            //res.send('Search by director');
-            break;
+
         case 'releaseYear':
-            //res.send('Search by release year');
+            value = new Date(params[key])
             break;
+
         default:
-            //res.send('your search criteria does not match')
+            res.send('your search criteria does not match')
             break;
     };
 
-    var attrib = `movie.${key}`;
-    regex = new RegExp(params[key],'i')
-    movie = await Movie.find()
-    .where(attrib)
-    .equals(regex)
-    .exec()
-    res.send(movie)
+      try{
+      const movie = await Movie.find()
+      .where(attrib)
+      .equals(value)
+      .exec()
+      res.send(movie)
+      } catch (e) { next }
+    
     
 };
 

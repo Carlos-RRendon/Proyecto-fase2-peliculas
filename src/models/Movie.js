@@ -82,5 +82,6 @@ Movie.plugin(AutoIncrement, {inc_field: 'movie._id' });
 
 Movie.plugin(uniqueValidator);
 
+
 module.exports = model('Movie', Movie, 'Movies');
 
