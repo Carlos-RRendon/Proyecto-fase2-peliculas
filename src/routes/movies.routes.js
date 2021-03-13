@@ -17,8 +17,7 @@ router.get('/', getMovies)
 router.get('/:id', getMovies)
 router.post('/', addMovie)
 
-
 //router.put('/:id', modifyMovie)
-//router.delete('/:id', deleteMovie)
+router.delete('/:id', deleteMovie)
 
 module.exports = router;

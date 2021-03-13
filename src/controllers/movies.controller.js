@@ -28,7 +28,7 @@ movieCtrl.addMovie = (req, res) => {
     const newMovie = new Movie({movie,score});   
        
     newMovie.save()
-    .then( movie => {res.status(201).send('Movie added successfully')})
+    .then( movie => {res.status(201).send(`Movie added successfully ID:${movie._id} `)})
     .catch( e => {res.status(400).send(e.message)} );
 
     /*
@@ -54,7 +54,11 @@ movieCtrl.getMovies = async (req, res,next) =>{
 };
 
 movieCtrl.findByAttribs = (req, res) =>{
-    res.send('Hola')
+    
+    params = req.query
+
+    res.send({params})
+    
 };
 
 
@@ -64,8 +68,13 @@ movieCtrl.modifyMovie = (req, res) =>{
 };
 
 //DELETE
-movieCtrl.deleteMovie = (req, res) =>{
-    res.send("Funciono")
+movieCtrl.deleteMovie = async (req, res) =>{
+    movieId = req.params.id
+    Movie.findByIdAndDelete(movieId)
+    .then( doc => res.send('Successfully deleted'))
+    .catch(e => res.send(`Error ${e.message}`))
+
+    
 };
 
 movieCtrl.addScore = (req, res) =>{
