@@ -17,13 +17,13 @@ app.use(bodyParser.json());
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "liga de mongoose", {
+  "mongodb+srv://Freshratings:Equipo18FreshRatings@cluster0.etjir.mongodb.net/FreshRatings?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
   }
 ).then(() => {
-  console.log("MongoDB conected...")
+  console.log("MongoDB successfully connected...")
 }).catch((err) => console.log(err.message))
 
 mongoose.set("debug", true);
