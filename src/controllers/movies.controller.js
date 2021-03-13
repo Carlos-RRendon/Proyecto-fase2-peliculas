@@ -71,10 +71,11 @@ movieCtrl.modifyMovie = (req, res) =>{
 movieCtrl.deleteMovie = async (req, res) =>{
     movieId = req.params.id
     Movie.findByIdAndDelete(movieId)
-    .then( doc => res.send('Successfully deleted'))
+    .then( movie => {
+        if (!movie) res.status(401).send('Movie Not found')
+        else res.send(`Movie ID ${movie._id}: ${movie.movie.title} Successfully deleted`)
+    })
     .catch(e => res.send(`Error ${e.message}`))
-
-    
 };
 
 movieCtrl.addScore = (req, res) =>{
