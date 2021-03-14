@@ -33,15 +33,14 @@ Para la elaboración de esta API se necesitaron varias herramientas, dependencia
     `Mongoose`
     Es una biblioteca de **ODM** para MongoDB y Node.js. Ayuda a manejar las relaciones entre los datos, cuenta con un esquema de validaciones y se usa para la traducción entre objetos en código y su representación en MongoDB.
 
-### 🗒 Historias de usuario
+### 📋 Historias de usuario
 Las historias de usuario son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema.  
-Para este proyecto desarrollamos las historias de usuario siguientes:
-![Historias de usuario](./img/userStories-Movies.jpeg)
-
+Para este proyecto desarrollamos las historias de usuario siguientes:  
+![Historias de usuario](./img/userStories-Movies.jpeg)  
 
 ### 🎬 Modelo
-Para esta API planteamos dos modelos
-- **Movie**
+Para el desarrollo de la API planteamos dos modelos diferentes, mismos que se plasmaron una estructura JSON que contiene información acerca de las propiedades del documento, llamada **Schema**.  
+- **Movie.js**
     Consiste en la entidad sobre la que se basa el funcionamiento de la API, en él se definen los atributos y las restricciones de cada campo, tal como se muestra a continuación:
     ```
     const Movie = new Schema({
@@ -107,7 +106,7 @@ Para esta API planteamos dos modelos
     }
     },{timestamps:true});
     ```
-- **User**
+- **User.js**
     Representa la entidad del usuario que va a realizar las consultas y que, a su vez puede registrarse se utilizó el schema siguiente:
     ```
     const User = new Schema({
@@ -140,7 +139,26 @@ Para esta API planteamos dos modelos
     }
     },{timestamps:true});
     ```
-
+### 😎 Implementación y resultados
+Una vez realizado todo el análisis de las historias de usuario y la implementación mediante el código, se obtuvieron los resultados siguietes:
+1. ## Agregar una nueva película
+Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies`
+Dentro del cuerpo de la petición debe estar el JSON correspondiente, tal como en el ejemplo siguiente:
+```
+{
+    title: "Spider-Man",
+    image: "https://i2.wp.com/plexmx.info/wp-content/uploads/2019/08/spiderman_ver1_xxlg.jpg?fit=1973%2C2935&ssl=1",
+    genre: ["Fantasy", "Action"],
+    synopsis: "A great movie",
+    classification: "PG-13",
+    duration: 116,
+    director: "Sam Raimi",
+    cast: ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
+    originalLanguage: "Inglés",
+    releaseYear: 2002-01-01
+}
+```
 
 
 
