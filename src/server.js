@@ -11,7 +11,7 @@ const app = express();
 
 //Settings
 app.set('port', PORT);
-app.set('host',HOST);
+
 
 
 //Middlewares

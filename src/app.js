@@ -3,6 +3,6 @@ require('./db');
 
 
 // Iniciando el servidor
-var server = app.listen( app.get('port'),app.get('host'), ()=> {
-  console.log(`Listening on: https://${app.get('host')}:${app.get('port')}`);
+var server = app.listen( app.get('port'), ()=> {
+  console.log(`Listening on port: ${app.get('port')}`);
 });
