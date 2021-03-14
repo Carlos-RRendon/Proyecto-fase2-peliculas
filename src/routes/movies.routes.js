@@ -5,7 +5,9 @@ const router = require('express').Router();
      addMovie,
      getMovies,
      deleteMovie,
-     findAndFilter
+     findAndFilter,
+     totalUpdate,
+     partialUpdate
  } = require('../controllers/movies.controller')
 
  //Rutas del CRUD
@@ -14,6 +16,11 @@ const router = require('express').Router();
 router.post('/search', findAndFilter)
 router.get('/', getMovies)
 router.get('/:id', getMovies)
+
+//Update
+router.put("/:id/search",partialUpdate)
+router.put('/:id',totalUpdate)
+
 
 //Create
 router.post('/', addMovie)

@@ -103,23 +103,23 @@ movieCtrl.findAndFilter =async (req,res,next) => {
             break;
     };
 
-
-    let filters = {};
-    let enableId = {};
+        
+     let filters = {};
+     let enableId = {};
     
-    if ( Object.keys(req.body).length !==0 ){
-        filters= req.body;
-        enableId = { _id :  filters._id};
-        Object.keys(filters)
-        .forEach( element => {
-            if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear","_id"].includes(element))
-            delete filters[element];
-            if (filters[element] !== 1 )
-            delete filters[element];
-        });
-    }
+     if ( Object.keys(req.body).length !==0 ){
+         filters= req.body;
+         enableId = { _id :  filters._id};
+         Object.keys(filters)
+         .forEach( element => {
+             if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear","_id"].includes(element))
+             delete filters[element];
+             if (filters[element] !== 1 )
+             delete filters[element];
+         });
+     }
 
-    
+
     
     try{
         const movie = await Movie.find()
@@ -135,9 +135,35 @@ movieCtrl.findAndFilter =async (req,res,next) => {
 
 
 //UPDATE
-movieCtrl.modifyMovie = (req, res) =>{
-    res.send("Funciono")
-};
+movieCtrl.totalUpdate = async (req,res) => {
+    id = req.params.id;
+    
+    let { genre,  title, image, synopsis, duration, director, cast, releaseYear,classification } = req.body;
+    
+    //Validations to mantain coherense in DB
+    const validateInput = () =>{
+        if(genre === undefined || genre.length === 0 )  throw new Error (`Must have at least one genre in field: genre, value ${genre}`);
+        else 
+            if( typeof(genre) === "string" ) genre = new Array(genre);
+        if (cast === undefined || cast.length === 0 ) throw new Error (`Must have at least one actor in field: cast, value ${cast}`)
+        else
+            if (typeof (cast) === 'string') cast = new Array(cast);    
+        
+        if (typeof releaseYear === 'number') releaseYear =releaseYear.toString();
+        if( classification === undefined || ![ 'G','PG','PG-13','NC-17', 'NR','R'].includes(classification)) throw new Error (`Error on classification field, must be one of this values ['G','PG','PG-13','NC-17', 'NR','R'], obtained ${classification}`)
+    }
+    
+    try{
+        validateInput();
+         const movie = await Movie.findByIdAndUpdate( id , { 'movie.genre':genre,'movie.title': title, 'movie.image':image, 'movie.synopsis':synopsis, "movie.duration":duration, "movie.director":director, "movie.cast":cast, "movie.releaseYear" :releaseYear, "movie.cast":cast, "movie.classification":classification }, {new:true, runValidators:true, context:'query'});
+        res.send(movie)
+    } catch (e){ res.status(400).send(e.message);}
+}
+
+movieCtrl.partialUpdate = (req,res,next) => {
+    console.log (req.params.id)
+    res.send( req.query) 
+}
 
 
 //DELETE

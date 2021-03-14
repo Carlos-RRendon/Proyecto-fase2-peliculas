@@ -21,7 +21,6 @@ const Movie = new Schema({
         },
         title: { 
             type: String,
-             unique: true,
               required: [true,'Title cannot be empty'],
               index: true
         },

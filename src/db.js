@@ -9,7 +9,8 @@ const MONGO_URI = `mongodb+srv://${MONGODB_USER}:${MONGODB_PASS}@cluster0.etjir.
 mongoose.connect( MONGO_URI, { 
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false
 })
 .then( db => console.log(`Your MongoDB ${MONGODB_DATABASE} is connected`))
 .catch( err => console.log(err));
