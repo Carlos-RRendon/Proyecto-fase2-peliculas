@@ -82,6 +82,12 @@ Movie.plugin(AutoIncrement, {inc_field: 'movie._id' });
 
 Movie.plugin(uniqueValidator);
 
+Movie.methods.publicData = function(){
+    return {
+        originalLanguage: this.originalLanguage
+    }
+}
+
 
 module.exports = model('Movie', Movie, 'Movies');
 

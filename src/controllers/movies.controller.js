@@ -8,30 +8,33 @@ const movieCtrl = {}
 movieCtrl.addMovie = (req, res,next) => {
     //Aqui va el codigo para agregar peliculas en la DB
    
-   const {movie, score} = req.body;
+   if( Object.keys(req.body).length !==0 ) {
+    const {movie, score} = req.body;
 
-   const checkDuplicates = () => {
-       scoreArray = [];
-       score.forEach(element => {
-           if (scoreArray.includes(element.user))
-            throw new Error('User can only rate once')
-           else scoreArray.push(element.user)
-       })
-   }
-
-   try{
-       checkDuplicates();
-    }catch (e){
-        res.send(e.message)
-    }   
-    movie.releaseYear = movie.releaseYear.toString()
-    const newMovie = new Movie({movie,score});   
-       
-    newMovie.save()
-    .then( movie => {
-        res.status(201).send(`Movie added successfully ID:${movie._id} `)
-    })
-    .catch( next );
+    const checkDuplicates = () => {
+        scoreArray = [];
+        score.forEach(element => {
+            if (scoreArray.includes(element.user))
+             throw new Error('User can only rate once')
+            else scoreArray.push(element.user)
+        })
+    }
+ 
+    try{
+        checkDuplicates();
+     }catch (e){
+         res.send(e.message)
+     }   
+     movie.releaseYear = movie.releaseYear.toString()
+     const newMovie = new Movie({movie,score});   
+        
+     newMovie.save()
+     .then( movie => {
+         res.status(201).send(`Movie added successfully ID:${movie._id} `)
+     })
+     .catch( next );
+    }
+    else { next() }
 
     /*
    //Function to validate without saving in DB
@@ -135,9 +138,142 @@ movieCtrl.findAndFilter =async (req,res,next) => {
 
 
 //UPDATE
-movieCtrl.modifyMovie = (req, res) =>{
-    res.send("Funciono")
-};
+movieCtrl.updateByAtribute = async (req, res, next) => {
+    let atribute = req.query
+    let key = Object.keys(atribute)[0]
+    console.log(req.params.id,req.body)
+
+    Movie.findById(req.params.id).then(movie => {
+        
+        if (!movie) {
+            return res.sendStatus(401);
+        }
+        let newData = req.body
+
+        switch (key) {
+            case 'title':
+                if (typeof newData.title !== 'undefined')
+                    movie.movie.title = newData.title
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'image':
+                if (typeof newData.image !== 'undefined')
+                    movie.movie.image = newData.image
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'genre':
+                if (typeof newData.genre !== 'undefined')
+                    movie.movie.genre = newData.genre
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'synopsis':
+                if (typeof newData.synopsis !== 'undefined')
+                    movie.movie.synopsis = newData.synopsis
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'classification':
+                if (typeof newData.classification !== 'undefined')
+                    movie.movie.classification = newData.classification
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'duration':
+                if (typeof newData.duration !== 'undefined')
+                    movie.movie.duration = newData.duration
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'director':
+                if (typeof newData.director !== 'undefined')
+                    movie.movie.director = newData.director
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'originalLanguage':
+                if (typeof newData.originalLanguage !== 'undefined')
+                    movie.movie.originalLanguage = newData.originalLanguage
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            case 'releaseYear':
+                if (typeof newData.releaseYear !== 'undefined')
+                    movie.movie.releaseYear = newData.releaseYear
+                movie.save().then(updAtribute => {
+                    res.status(201).json(updAtribute)
+                }).catch(next)
+                break;
+            default:
+                res.send('Unable to update your DB')
+                break;
+        };
+    }).catch(next)
+}
+
+movieCtrl.updateMovie = async (req, res, next) => {
+    //let newData = req.body
+    //res.send(newData)
+    Movie.findById(req.params.id).then(movie => {
+        if (!movie) {
+            return res.sendStatus(401);
+        }
+        let newData = req.body
+        if (typeof newData.title !== 'undefined')
+            movie.movie.title = newData.title
+        if (typeof newData.image !== 'undefined')
+            movie.movie.image = newData.image
+        if (typeof newData.genre !== 'undefined') {
+            for (let i = 0; i < newData.genre.length; i++) {
+                let cont = 0
+                for (let j = 0; j < movie.movie.genre.length; j++) {
+                    if (newData.genre[i] != movie.movie.genre[j]) {
+                        cont++
+                    }
+                    if (cont == movie.movie.genre.length)
+                        movie.movie.genre.push(newData.genre[i])
+                }
+            }
+        }
+        if (typeof newData.synopsis !== 'undefined')
+            movie.movie.synopsis = newData.synopsis
+        if (typeof newData.classification !== 'undefined')
+            movie.movie.classification = newData.classification
+        if (typeof newData.duration !== 'undefined')
+            movie.movie.duration = newData.duration
+        if (typeof newData.director !== 'undefined')
+            movie.director = newData.director
+        if (typeof newData.cast !== 'undefined') {
+            for (let i = 0; i < newData.cast.length; i++) {
+                let cont = 0
+                for (let j = 0; j < movie.movie.cast.length; j++) {
+                    if (newData.cast[i] != movie.movie.cast[j]) {
+                        cont++
+                    }
+                    if (cont == movie.movie.cast.length)
+                        movie.movie.cast.push(newData.cast[i])
+                }
+            }
+        }
+        if (typeof newData.originalLanguage !== 'undefined')
+            movie.movie.originalLanguage = newData.originalLanguage
+        if (typeof newData.releaseYear !== 'undefined')
+            movie.movie.releaseYear = newData.releaseYear
+        movie.save().then(updatedMovie => {
+            res.status(201).json(updatedMovie)
+        }).catch(next)
+    }).catch(next)
+}
 
 
 //DELETE
