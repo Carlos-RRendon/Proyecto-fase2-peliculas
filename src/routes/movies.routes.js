@@ -13,7 +13,6 @@ const router = require('express').Router();
  } = require('../controllers/movies.controller')
 
 
-router.get('/search', findByAttribs)
 router.post('/search', findAndFilter)
 router.get('/', getMovies)
 router.get('/:id', getMovies)
