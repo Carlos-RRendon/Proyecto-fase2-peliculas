@@ -20,7 +20,7 @@ Los requisitos mínimos que debe contar la API son los siguientes:
 ### 👨‍💻 Herramientas utilizadas:
 Para la elaboración de esta API se necesitaron varias herramientas, dependencias, librerías, etc., algunas de las más importantes son las siguientes:
 - #### JavaScript / NodeJS
-    `Node.js` es un entorno `JavaScript` que permite ejecutar en el servidor, de manera asíncrona, con una arquitectura orientada a eventos.
+    `Node.js` es un entorno `JavaScript` que permite ejecutar en el servidor, de manera asíncrona, con una arquitectura orientada a eventos.  
     `JSON` es un formato basado en texto estándar para representar datos estructurados en la sintaxis de objetos de JavaScript.
 - #### npm
     `npm` es el sistema de gestión de paquetes por defecto para Node.js que facilita la instalación y administración de paquetes. En este proyecto (entre otros), se utilizaron los siguientes:
