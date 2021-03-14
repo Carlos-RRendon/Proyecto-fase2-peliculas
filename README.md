@@ -35,7 +35,7 @@ Para la elaboración de esta API se necesitaron varias herramientas, dependencia
 
 ### 🎬 Modelo
 Para esta API planteamos dos modelos
-- `Movie`
+- `**Movie**`
     Consiste en la entidad sobre la que se basa el funcionamiento de la API, en él se definen los atributos y las restricciones de cada campo, tal como se muestra a continuación:
     ```
     const Movie = new Schema({
