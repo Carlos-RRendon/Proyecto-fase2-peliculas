@@ -1629,7 +1629,224 @@
 			]
 		},
 		{
-			"name": "UpdateByAtrrib",
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"releaseYear\" : 1991,\r\n   \"director\" : \"Steven Spilverg\",\r\n   \"duration\" : 145,\r\n   \"synopsis\" : \"El martir es una historia que comienza\",\r\n   \"title\" : \"El martir\",\r\n   \"genre\" : \"suspense\",\r\n   \"cast\": \"Leonardo DiCaprio\",\r\n   \"_id\" : 110,\r\n   \"classification\" : \"PG-13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/v1/movies/604dbe77bb978a4ba8032b93",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"movies",
+						"604dbe77bb978a4ba8032b93"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "suspens",
+							"disabled": true
+						},
+						{
+							"key": "_id",
+							"value": "7",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "synopsis",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "134",
+							"disabled": true
+						},
+						{
+							"key": "director",
+							"value": "Francis",
+							"disabled": true
+						},
+						{
+							"key": "cast",
+							"value": "leonardo dicaprio",
+							"disabled": true
+						},
+						{
+							"key": "originalLanguage",
+							"value": "ingles",
+							"disabled": true
+						},
+						{
+							"key": "classification",
+							"value": "pg",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Batman el caballero",
+							"disabled": true
+						},
+						{
+							"key": "perritos",
+							"value": "puppy",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"releaseYear\" : 1991,\r\n   \"director\" : \"Steven Spilverg\",\r\n   \"duration\" : 145,\r\n   \"synopsis\" : \"El martir es una historia que comienza\",\r\n   \"title\" : \"El martir\",\r\n   \"genre\" : \"suspense\",\r\n   \"cast\": \"Leonardo DiCaprio\",\r\n   \"_id\" : 110,\r\n   \"classification\" : \"PG-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/v1/movies/604dbe77bb978a4ba8032b93",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"movies",
+								"604dbe77bb978a4ba8032b93"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "suspens",
+									"disabled": true
+								},
+								{
+									"key": "_id",
+									"value": "7",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "synopsis",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "duration",
+									"value": "134",
+									"disabled": true
+								},
+								{
+									"key": "director",
+									"value": "Francis",
+									"disabled": true
+								},
+								{
+									"key": "cast",
+									"value": "leonardo dicaprio",
+									"disabled": true
+								},
+								{
+									"key": "originalLanguage",
+									"value": "ingles",
+									"disabled": true
+								},
+								{
+									"key": "classification",
+									"value": "pg",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "Batman el caballero",
+									"disabled": true
+								},
+								{
+									"key": "perritos",
+									"value": "puppy",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "522"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20a-MUjpaQ9pQOzOIp7Z5EsIFgFE998\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Mar 2021 08:54:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"genre\": [\n            \"suspense\"\n        ],\n        \"cast\": [\n            \"Leonardo DiCaprio\"\n        ],\n        \"originalLanguage\": \"English\",\n        \"title\": \"El martir\",\n        \"image\": null,\n        \"synopsis\": \"El martir es una historia que comienza\",\n        \"classification\": \"PG-13\",\n        \"duration\": 145,\n        \"director\": \"Steven Spilverg\",\n        \"releaseYear\": \"1991-01-01T00:00:00.000Z\",\n        \"_id\": 110\n    },\n    \"_id\": \"604dbe77bb978a4ba8032b93\",\n    \"score\": [\n        {\n            \"user\": \"604aaab83ddb293e94fcdac5\",\n            \"rating\": 9.4\n        },\n        {\n            \"user\": \"604aaab83ddb293e94fcdac7\",\n            \"rating\": 9.4\n        }\n    ],\n    \"createdAt\": \"2021-03-14T07:42:47.716Z\",\n    \"updatedAt\": \"2021-03-14T08:54:42.593Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateOne",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -1720,16 +1937,134 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GoodRequest",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\" : \"Campanita\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/v1/movies/604dbe77bb978a4ba8032b93",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"movies",
+								"604dbe77bb978a4ba8032b93"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "7",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "synopsis",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "duration",
+									"value": "134",
+									"disabled": true
+								},
+								{
+									"key": "director",
+									"value": "Francis",
+									"disabled": true
+								},
+								{
+									"key": "cast",
+									"value": "leonardo dicaprio",
+									"disabled": true
+								},
+								{
+									"key": "classification",
+									"value": "pg",
+									"disabled": true
+								},
+								{
+									"key": "perritos",
+									"value": "puppy",
+									"disabled": true
+								},
+								{
+									"key": "genre",
+									"value": "suspens",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "510"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1fe-ZqqBhXB9TS9RJZNYv4mWPHBCHTI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 14 Mar 2021 11:50:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": {\n        \"genre\": [\n            \"suspense\"\n        ],\n        \"cast\": [\n            \"2016\"\n        ],\n        \"originalLanguage\": \"English\",\n        \"title\": \"Campanita\",\n        \"image\": null,\n        \"synopsis\": \"El martir es una historia que comienza\",\n        \"classification\": \"PG-13\",\n        \"duration\": 2016,\n        \"director\": \"Steven Spilverg\",\n        \"releaseYear\": \"1991-01-01T00:00:00.000Z\",\n        \"_id\": 110\n    },\n    \"_id\": \"604dbe77bb978a4ba8032b93\",\n    \"score\": [\n        {\n            \"user\": \"604aaab83ddb293e94fcdac5\",\n            \"rating\": 9.4\n        },\n        {\n            \"user\": \"604aaab83ddb293e94fcdac7\",\n            \"rating\": 9.4\n        }\n    ],\n    \"createdAt\": \"2021-03-14T07:42:47.716Z\",\n    \"updatedAt\": \"2021-03-14T11:50:50.107Z\",\n    \"__v\": 0\n}"
+				}
+			]
 		},
 		{
-			"name": "FindandFilterByAttrib Copy",
+			"name": "FindandFilterByAttrib",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"_id\" : 0,\r\n    \"movie.genre\" : 0,\r\n    \"movie._id\" : 1,\r\n    \"movie.title\" : 1 ,\r\n    \"movie.image\" :  0,\r\n    \"movie.synopsis\" : 0,\r\n    \"movie.duration\" : 0,\r\n    \"movie.director\" : 0,\r\n    \"movie.cast\" : 0,\r\n    \"movie.releaseYear\": 0,\r\n    \"cat\" : 1\r\n}",
+					"raw": "{\r\n    \"_id\" : 0,\r\n    \"genre\" : 0,\r\n    \"id\" : 1,\r\n    \"title\" : 1 ,\r\n    \"image\" :  0,\r\n    \"synopsis\" : 0,\r\n    \"duration\" : 0,\r\n    \"director\" : 0,\r\n    \"cast\" : 0,\r\n    \"releaseYear\": 0,\r\n    \"cat\" : 1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1737,7 +2072,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:3000/v1/movies/search?_id=7",
+					"raw": "127.0.0.1:3000/v1/movies/search?_id=5",
 					"host": [
 						"127",
 						"0",
@@ -1758,7 +2093,7 @@
 						},
 						{
 							"key": "_id",
-							"value": "7"
+							"value": "5"
 						},
 						{
 							"key": "title",
@@ -2084,7 +2419,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:3000/v1/movies/604c316726bd3619a0c37f98",
+					"raw": "127.0.0.1:3000/v1/movies/604dafd8d125d53604e4a405",
 					"host": [
 						"127",
 						"0",
@@ -2095,7 +2430,7 @@
 					"path": [
 						"v1",
 						"movies",
-						"604c316726bd3619a0c37f98"
+						"604dafd8d125d53604e4a405"
 					]
 				}
 			},
