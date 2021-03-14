@@ -29,7 +29,7 @@ Para la elaboración de esta API se necesitaron varias herramientas, dependencia
     - `cors`: Es un paquete que proporciona un middleware *Connect / Express* que se puede usar para habilitar CORS con varias opciones.
     - `body-parser`: Es un middleware de análisis que es responsable de analizar los cuerpos de las solicitudes entrantes en un middleware antes de manejarlo.
 - #### MongoDB
-    Para este proyecto se utilizó MongoDB, una base de datos de documentos que ofrece gran escalabilidad y flexibilidad, así como un modelo de consultas e indexación avanzado.
+    Para este proyecto se utilizó MongoDB, una base de datos de documentos que ofrece gran escalabilidad y flexibilidad, así como un modelo de consultas e indexación avanzado.  
     `Mongoose`
     Es una biblioteca de **ODM** para MongoDB y Node.js. Ayuda a manejar las relaciones entre los datos, cuenta con un esquema de validaciones y se usa para la traducción entre objetos en código y su representación en MongoDB.
 
