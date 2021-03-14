@@ -33,6 +33,12 @@ Para la elaboración de esta API se necesitaron varias herramientas, dependencia
     `Mongoose`
     Es una biblioteca de **ODM** para MongoDB y Node.js. Ayuda a manejar las relaciones entre los datos, cuenta con un esquema de validaciones y se usa para la traducción entre objetos en código y su representación en MongoDB.
 
+### 🗒 Historias de usuario
+Las historias de usuario son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema.  
+Para este proyecto desarrollamos las historias de usuario siguientes:
+![Historias de usuario](./img/userStories-Movies.jpeg)
+
+
 ### 🎬 Modelo
 Para esta API planteamos dos modelos
 - **Movie**
