@@ -18,9 +18,9 @@ router.get('/search', findByAttribs )
 router.get('/', getMovies)
 router.get('/:id', getMovies)
 router.post('/', addMovie)
-router.post('/:id/search', updateByAtribute) //este es el bueno
-router.get('/:id/search', updateByAtribute) //este es para prueba
-router.post('/:id', updateMovie)
+router.put('/:id/search', updateByAtribute) //este es el bueno
+//router.get('/:id/search', updateByAtribute) //este es para prueba
+router.put('/:id', updateMovie)
 
 
 //router.put('/:id', modifyMovie)
