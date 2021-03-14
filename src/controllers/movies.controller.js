@@ -135,34 +135,132 @@ movieCtrl.findAndFilter =async (req,res,next) => {
 
 
 //UPDATE
-movieCtrl.totalUpdate = async (req,res) => {
-    id = req.params.id;
-    
-    let { genre,  title, image, synopsis, duration, director, cast, releaseYear,classification } = req.body;
-    
-    //Validations to mantain coherense in DB
-    const validateInput = () =>{
-        if(genre === undefined || genre.length === 0 )  throw new Error (`Must have at least one genre in field: genre, value ${genre}`);
-        else 
-            if( typeof(genre) === "string" ) genre = new Array(genre);
-        if (cast === undefined || cast.length === 0 ) throw new Error (`Must have at least one actor in field: cast, value ${cast}`)
-        else
-            if (typeof (cast) === 'string') cast = new Array(cast);    
+movieCtrl.totalUpdate = async (req,res,next) => {
+ 
+    if (Object.keys(req.body).length !== 0  ){
+            
+        let { genre,  title, image, synopsis, duration, director, cast, releaseYear,classification } = req.body;
         
-        if (typeof releaseYear === 'number') releaseYear =releaseYear.toString();
-        if( classification === undefined || ![ 'G','PG','PG-13','NC-17', 'NR','R'].includes(classification)) throw new Error (`Error on classification field, must be one of this values ['G','PG','PG-13','NC-17', 'NR','R'], obtained ${classification}`)
-    }
+        //Validations to mantain coherense in DB
+        const validateInput = () =>{
+            if(genre === undefined || genre.length === 0 )  throw new Error (`Must have at least one genre in field: genre, value ${genre}`);
+            else 
+                if( typeof(genre) === "string" ) genre = new Array(genre);
+            if (cast === undefined || cast.length === 0 ) throw new Error (`Must have at least one actor in field: cast, value ${cast}`)
+            else
+                if (typeof (cast) === 'string') cast = new Array(cast);    
+            
+            if (typeof releaseYear === 'number') releaseYear =releaseYear.toString();
+            if( classification === undefined || ![ 'G','PG','PG-13','NC-17', 'NR','R'].includes(classification)) throw new Error (`Error on classification field, must be one of this values ['G','PG','PG-13','NC-17', 'NR','R'], obtained ${classification}`)
+        }
+
+        try{
+            validateInput();
+            const movie = await Movie.findByIdAndUpdate( id , { 'movie.genre':genre,'movie.title': title, 'movie.image':image, 'movie.synopsis':synopsis, "movie.duration":duration, "movie.director":director, "movie.cast":cast, "movie.releaseYear" :releaseYear, "movie.cast":cast, "movie.classification":classification }, {new:true, runValidators:true, context:'query'});
+            res.send(movie)
+        } catch (e){ res.status(400).send(e.message);}
+    } else{ res.status(400).send('There are no parameters to update') }
     
-    try{
-        validateInput();
-         const movie = await Movie.findByIdAndUpdate( id , { 'movie.genre':genre,'movie.title': title, 'movie.image':image, 'movie.synopsis':synopsis, "movie.duration":duration, "movie.director":director, "movie.cast":cast, "movie.releaseYear" :releaseYear, "movie.cast":cast, "movie.classification":classification }, {new:true, runValidators:true, context:'query'});
-        res.send(movie)
-    } catch (e){ res.status(400).send(e.message);}
+   
 }
 
-movieCtrl.partialUpdate = (req,res,next) => {
-    console.log (req.params.id)
-    res.send( req.query) 
+movieCtrl.partialUpdate =  async (req,res,next) => {
+    const id = req.params.id; 
+    const body = req.body;
+    let key = Object.keys(body)[0];
+    let value = body[key];
+    var query = {};
+    
+    switch (key) {
+        case 'genre':
+            
+            if ( value.length === 0 ){
+                res.status(400).send('Must have at least one genre');
+                return
+            }
+            else {
+                if ( typeof(value) === 'string' ) value = new Array(value);
+                if ( typeof(value) === 'number' ){
+                    res.status(400).send('Genre cannot be a number');
+                    return
+                }
+            } 
+            query = {"movie.genre": value}           
+            break;
+
+        case 'cast':
+            key = 'movie.cast';
+            if ( value.length === 0  ){
+                res.status(400).send('Must have at least one actor');
+                return    
+            }
+            else {
+                if ( typeof(value) === 'string' ) value = new Array(value);
+                if ( typeof(value) === 'number' ) {
+                    res.status(400).send('Cast cannot be a number');
+                     return
+                }
+            }  
+            query = {"movie.cast":value}    
+            break;
+
+        case 'title':
+            query = {"movie.title":value}
+            break;
+
+        case 'originalLanguage':
+            query = {"movie.originalLanguage":value}
+            break;
+
+            case 'image':
+                query = {"movie.image": value}
+            break;
+
+        case 'synopsis':
+            query = {"movie.synopsis": value}
+            break;
+
+        case 'classification':
+          
+            if( ![ 'G','PG','PG-13','NC-17', 'NR','R'].includes(value)){
+                res.status(400).send(`Classification must be one of this values ['G','PG','PG-13','NC-17', 'NR','R'], obtained ${value}`);
+                return
+            }
+            query = {"movie.classification": value}
+            break;
+
+        case 'duration':
+            if ( typeof value !== "number") {res.status(401).send('Duration must be a number');return}
+            query = {"movie.duration": value}
+            break;
+
+        case 'director':
+            query = {"movie.director": value}
+            break;
+
+        case 'releaseYear':
+            key = 'movie.releaseYear'
+            if (typeof(value) === 'number') {
+                value = value.toString();
+                query = {"movie.releaseYear": value}
+            } else {res.status(400).send('releaseYear must be a number'); return}
+            
+    
+            
+        default:
+            res.status(400).send(`The property ${key} doesn't exist`);
+            return
+           
+    }
+    
+
+     try{
+         const movie = await Movie.findByIdAndUpdate( id ,query, {new:true, runValidators:true, context:'query'});
+         res.send(movie)
+     } catch (e){ res.status(400).send(e.message);}
+
+
+
 }
 
 

@@ -18,8 +18,9 @@ router.get('/', getMovies)
 router.get('/:id', getMovies)
 
 //Update
-router.put("/:id/search",partialUpdate)
-router.put('/:id',totalUpdate)
+
+router.put("/:id",partialUpdate)
+router.post('/:id',totalUpdate)
 
 
 //Create
