@@ -15,11 +15,11 @@ const Movie = new Schema({
 
     movie :{
         _id : {
-            type: Number, 
+            type: Number,
             index: true ,
-            unique: true      
+            unique: true
         },
-        title: { 
+        title: {
             type: String,
              unique: true,
               required: [true,'Title cannot be empty'],
@@ -57,7 +57,6 @@ const Movie = new Schema({
         originalLanguage: {type: String , default: 'Inglés'},
         releaseYear: {type: Date, required: [true, 'Must have a release year']}
     },
-        
     score: {
         type: [{
             user: {
@@ -72,7 +71,7 @@ const Movie = new Schema({
             },
             _id: false
         }]
-    }    
+    }
 },{timestamps:true});
 
 
@@ -81,6 +80,20 @@ const Movie = new Schema({
 Movie.plugin(AutoIncrement, {inc_field: 'movie._id' });
 
 Movie.plugin(uniqueValidator);
+
+
+Movie.methods.publicData = function () {
+    return {
+        //id: this.id,
+        //title: this.title,
+        //name: this.nombre,
+        originalLanguage: this.originalLanguage,
+        //email: this.email,
+        //createdAt: this.createdAt,
+        //updatedAt: this.updatedAt
+    };
+};
+
 
 module.exports = model('Movie', Movie, 'Movies');
 
