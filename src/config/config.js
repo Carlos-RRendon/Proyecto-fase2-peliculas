@@ -1,10 +1,10 @@
 const path = require('path');
-const dotenv = require('dotenv');
+
 
 
 
 if ( process.env.NODE_ENV === 'development' ){
-  
+  const dotenv = require('dotenv');  
   dotenv.config ({
     path : path.resolve( __dirname, '..','..', process.env.NODE_ENV + '.env' )
   })  
