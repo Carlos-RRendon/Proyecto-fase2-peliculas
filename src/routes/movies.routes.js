@@ -4,7 +4,6 @@ const router = require('express').Router();
  const {
      addMovie,
      getMovies,
-     findByAttribs,
      modifyMovie,
      deleteMovie,
      addScore,
