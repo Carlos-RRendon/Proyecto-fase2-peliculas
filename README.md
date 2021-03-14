@@ -100,7 +100,7 @@ Para esta API planteamos dos modelos
         }]
     }
 },{timestamps:true});
-    ```
+```
 - `User`
     Representa la entidad del usuario que va a realizar las consultas y que, a su vez puede registrarse
 
