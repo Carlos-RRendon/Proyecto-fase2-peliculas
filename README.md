@@ -1,6 +1,6 @@
 # <center>🎥 Proyecto Fresh Ratings 🎥</center>
 Desarrollo de API con base en lo aprendido a lo largo de las sesiones correspondientes al módulo "Back-end Fundamentals", de la fase 2 del programa Desarrollo Web, impartido por la empresa BEDU en colaboración con Becas Santander.
-###### Equipo 18
+##### Equipo 18
 
 ## 📜 Descripción del proyecto
 El proyecto consiste en desarrollar una API para la manipulación y búsqueda de películas, así como su información. Los usuarios serán capaces de manipular la información almacenada en la base de datos y realizar operaciones `CRUD` (Create, Read, Update, Delete), correspondientes a las peticiones `GET`, `POST`, `PUT` y `DELETE`.
@@ -21,7 +21,7 @@ Los requisitos mínimos que debe contar la API son los siguientes:
 Para la elaboración de esta API se necesitaron varias herramientas, dependencias, librerías, etc., algunas de las más importantes son las siguientes:
 - #### JavaScript / NodeJS
     `Node.js` es un entorno `JavaScript` que permite ejecutar en el servidor, de manera asíncrona, con una arquitectura orientada a eventos.
-    `JSON`
+    `JSON` es un formato basado en texto estándar para representar datos estructurados en la sintaxis de objetos de JavaScript.
 - #### npm
     `npm` es el sistema de gestión de paquetes por defecto para Node.js que facilita la instalación y administración de paquetes. En este proyecto (entre otros), se utilizaron los siguientes:
     - `expresss`: Es un framework web que proporciona mecanismos para la escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes caminos URL (rutas).
