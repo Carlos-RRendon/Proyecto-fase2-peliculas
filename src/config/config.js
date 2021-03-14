@@ -8,13 +8,11 @@ if ( process.env.NODE_ENV === 'development' ){
   dotenv.config ({
     path : path.resolve( __dirname, '..','..', process.env.NODE_ENV + '.env' )
   })  
-} else {
-  dotenv.config();
-}
+} 
 
  
   module.exports = {
-      PORT : process.env.PORT || 8080,
+      PORT : process.env.PORT || 80,
       HOST : process.env.HOST || 'localhost',
       MONGODB_USER : process.env.MONGODB_USER,
       MONGODB_PASS: process.env.MONGODB_PASS,
