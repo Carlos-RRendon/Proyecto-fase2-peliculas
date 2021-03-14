@@ -6,6 +6,7 @@
 
  //Importando módulo mongoose-unique-validator
  const uniqueValidator = require('mongoose-unique-validator');
+ const bcrypt = require('bcryptjs');
 
 const User = new Schema({
 
@@ -37,6 +38,11 @@ const User = new Schema({
     }
 },{timestamps:true});
 
-User.plugin(uniqueValidator)
+User.plugin(uniqueValidator);
+
+User.methods.encryptPassword = async password => {
+    const salt = await bcrypt.genSalt(10);
+    return await bcrypt.hash( password, salt)
+}
  
 module.exports = model('User', User, 'Users');

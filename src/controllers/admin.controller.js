@@ -22,9 +22,12 @@ adminCtrl.populateMoviesDb = (req, res) => {
 
 };
 //Create Users
-adminCtrl.populateUsersDb = (req,res) => {
-    allUsers.forEach( user =>{
-        user = new User( user )
+adminCtrl.populateUsersDb = (req,res,next) => {
+    allUsers.forEach( async user =>{
+        user = new User( user );
+        try{
+            user.password = await user.encryptPassword( user.password )
+        }  catch (e) {next}
         user.save()
         .then( s => console.log(`User ${user._id} : ${user.username} successfully added`) )
         .catch( e => console.log(`Error ${e}.

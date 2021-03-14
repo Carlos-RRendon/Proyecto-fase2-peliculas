@@ -4,10 +4,11 @@ const User = require('../models/User')
 const userCtrl ={}
 
 //CREATE
-userCtrl.addUser = (req, res) => {
+userCtrl.addUser = async (req, res) => {
     
     const body = req.body;
     const user = new User(body);
+    user.password = await user.encryptPassword(body.password);
     user.save()
     .then( succes => res.send(`User ${body.username} successfully added`))
     .catch(e => {res.send(e.message)})
