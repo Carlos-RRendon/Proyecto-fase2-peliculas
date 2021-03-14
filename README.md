@@ -99,8 +99,8 @@ Para esta API planteamos dos modelos
             _id: false
         }]
     }
-},{timestamps:true});
-```
+    },{timestamps:true});
+    ```
 - `User`
     Representa la entidad del usuario que va a realizar las consultas y que, a su vez puede registrarse
 
