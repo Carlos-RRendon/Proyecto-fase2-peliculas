@@ -148,23 +148,23 @@ movieCtrl.findAndFilter =async (req,res,next) => {
             break;
     };
 
-    let body= req.body;
-    
-    Object.keys(body)
+    let filters= req.body;
+    let enableId = { _id :  filters._id};
+    console.log(filters)
+    Object.keys(filters)
     .forEach( element => {
-        if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear"].includes(element))
-        delete body[element]
-        if (body[element] !== 1 )
-        delete body[element]
+        if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear","_id"].includes(element))
+        delete filters[element]
+        if (filters[element] !== 1 )
+        delete filters[element]
     });
-    console.log(body)
-    
     
     try{
         const movie = await Movie.find()
         .where(attrib)
         .equals(value)
-        .select(body)
+        .select(filters)
+        .select(enableId)
         .exec()
         if (movie.length === 0 ) res.send("Sorry we couldn't find anything for your search, please try again");
         else res.send(movie);
