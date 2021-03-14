@@ -139,12 +139,12 @@ Para el desarrollo de la API planteamos dos modelos diferentes, mismos que se pl
     }
     },{timestamps:true});
     ```
-### 😎 Implementación y resultados
+## 😎 Implementación y resultados
 Una vez realizado todo el análisis de las historias de usuario y la implementación mediante el código, se obtuvieron los resultados siguietes:
-1. ## Agregar una nueva película
+1. #### Agregar una nueva película
 Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
-> `https://freshratings.herokuapp.com/v1/movies`
-Dentro del cuerpo de la petición debe estar el JSON correspondiente, tal como en el ejemplo siguiente:
+> `https://freshratings.herokuapp.com/v1/movies`  
+Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en el cuerpo, tal como en el ejemplo siguiente:
 ```
 {
     title: "Spider-Man",
