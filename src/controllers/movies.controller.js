@@ -70,7 +70,6 @@ movieCtrl.getMovies = async (req, res,next) =>{
 
 movieCtrl.findByAttribs = async (req, res,next) =>{
           
-    
     let params = req.query;
     let key = Object.keys(params)[0];
     let attrib = `movie.${key}`;
@@ -108,11 +107,68 @@ movieCtrl.findByAttribs = async (req, res,next) =>{
       .where(attrib)
       .equals(value)
       .exec()
-      if (!movie) res.send("Sorry we couldn't find anything for your search, please try again");
+      if (movie.length === 0 ) res.send("Sorry we couldn't find anything for your search, please try again");
       else res.send(movie);
       } catch (e) { next }
     
     
+};
+
+movieCtrl.findAndFilter =async (req,res,next) => {
+
+    let params = req.query;
+    let key = Object.keys(params)[0];
+    let attrib = `movie.${key}`;
+    let value = new RegExp(params[key],'i');
+
+    switch (key) {
+        
+        case '_id':
+            value = params[key];
+            break;
+        
+        case 'image':
+            res.send('Cannot search by image');
+            break;
+
+        case 'synopsis':
+            res.send('Searching by synopsis has no sense');
+            break;
+
+        case 'duration':
+            value = params[key]
+            break;
+
+        case 'releaseYear':
+            value = new Date(params[key])
+            break;
+
+        default:
+            if ( !['genre','title','director','cast','originalLanguage','classification'].includes(key)) res.send('your search criteria does not match')
+            break;
+    };
+
+    let body= req.body;
+    
+    Object.keys(body)
+    .forEach( element => {
+        if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear"].includes(element))
+        delete body[element]
+        if (body[element] !== 1 )
+        delete body[element]
+    });
+    console.log(body)
+    
+    
+    try{
+        const movie = await Movie.find()
+        .where(attrib)
+        .equals(value)
+        .select(body)
+        .exec()
+        if (movie.length === 0 ) res.send("Sorry we couldn't find anything for your search, please try again");
+        else res.send(movie);
+        } catch (e) { next }
 };
 
 

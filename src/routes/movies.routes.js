@@ -8,11 +8,13 @@ const router = require('express').Router();
      modifyMovie,
      deleteMovie,
      addScore,
-     getMoviebyId
+     getMoviebyId,
+     findAndFilter
  } = require('../controllers/movies.controller')
 
 
-router.get('/search', findByAttribs )
+router.get('/search', findByAttribs)
+router.post('/search', findAndFilter)
 router.get('/', getMovies)
 router.get('/:id', getMovies)
 router.post('/', addMovie)
