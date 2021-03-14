@@ -14,7 +14,7 @@ if ( process.env.NODE_ENV === 'development' ){
 
  
   module.exports = {
-      PORT : process.env.PORT || 3000,
+      PORT : process.env.PORT || 8080,
       HOST : process.env.HOST || 'localhost',
       MONGODB_USER : process.env.MONGODB_USER,
       MONGODB_PASS: process.env.MONGODB_PASS,
