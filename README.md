@@ -24,10 +24,10 @@ Para la elaboración de esta API se necesitaron varias herramientas, dependencia
     `JSON`
 - #### npm
     `npm` es el sistema de gestión de paquetes por defecto para Node.js que facilita la instalación y administración de paquetes. En este proyecto (entre otros), se utilizaron los siguientes:
-        - `expresss`: Es un framework web que proporciona mecanismos para la escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes caminos URL (rutas).
-        - `nodemon`: Herramienta útil ya quevmonitorea los cambios en el código y automáticamente reinicia el servidor.
-        - `cors`: Es un paquete que proporciona un middleware *Connect / Express* que se puede usar para habilitar CORS con varias opciones.
-        - `body-parser`: Es un middleware de análisis que es responsable de analizar los cuerpos de las solicitudes entrantes en un middleware antes de manejarlo.
+    - `expresss`: Es un framework web que proporciona mecanismos para la escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes caminos URL (rutas).
+    - `nodemon`: Herramienta útil ya quevmonitorea los cambios en el código y automáticamente reinicia el servidor.
+    - `cors`: Es un paquete que proporciona un middleware *Connect / Express* que se puede usar para habilitar CORS con varias opciones.
+    - `body-parser`: Es un middleware de análisis que es responsable de analizar los cuerpos de las solicitudes entrantes en un middleware antes de manejarlo.
 - #### MongoDB
     Para este proyecto se utilizó MongoDB, una base de datos de documentos que ofrece gran escalabilidad y flexibilidad, así como un modelo de consultas e indexación avanzado.
     `Mongoose`
