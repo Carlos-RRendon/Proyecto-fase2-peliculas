@@ -144,6 +144,7 @@ Una vez realizado todo el análisis de las historias de usuario y la implementac
 1. #### Agregar una nueva película
 Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
 > `https://freshratings.herokuapp.com/v1/movies`  
+
 Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en el cuerpo, tal como en el ejemplo siguiente:
 ```
 {
