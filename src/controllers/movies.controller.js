@@ -8,24 +8,24 @@ const movieCtrl = {}
 movieCtrl.addMovie = (req, res,next) => {
     //Aqui va el codigo para agregar peliculas en la DB
    
-   const {movie, score} = req.body;
+   const {movie} = req.body;
 
-   const checkDuplicates = () => {
-       scoreArray = [];
-       score.forEach(element => {
-           if (scoreArray.includes(element.user))
-            throw new Error('User can only rate once')
-           else scoreArray.push(element.user)
-       })
-   }
+//    const checkDuplicates = () => {
+//        scoreArray = [];
+//        score.forEach(element => {
+//            if (scoreArray.includes(element.user))
+//             throw new Error('User can only rate once')
+//            else scoreArray.push(element.user)
+//        })
+//    }
 
-   try{
-       checkDuplicates();
-    }catch (e){
-        res.send(e.message)
-    }   
+//    try{
+//        checkDuplicates();
+//     }catch (e){
+//         res.send(e.message)
+//     }   
     movie.releaseYear = movie.releaseYear.toString()
-    const newMovie = new Movie({movie,score});   
+    const newMovie = new Movie({movie});   
        
     newMovie.save()
     .then( movie => {
