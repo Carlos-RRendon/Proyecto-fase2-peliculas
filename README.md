@@ -152,16 +152,16 @@ Para realizar esta acción se necesita la petición `post` y la URL como la que 
 Puesto que corresponde a una petición post, se necesita mandar un objeto JSON en el cuerpo, mismo que será almacenado en la BD, como el siguiente:
 ```
 {
-    title: "Spider-Man",
-    image: "https://i2.wp.com/plexmx.info/wp-content/uploads/2019/08/spiderman_ver1_xxlg.jpg?fit=1973%2C2935&ssl=1",
-    genre: ["Fantasy", "Action"],
-    synopsis: "A great movie",
-    classification: "PG-13",
-    duration: 116,
-    director: "Sam Raimi",
-    cast: ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
-    originalLanguage: "Inglés",
-    releaseYear: 2002-01-01
+    "title": "Spider-Man",
+    "image": "https://i2.wp.com/plexmx.info/wp-content/uploads/2019/08/spiderman_ver1_xxlg.jpg?fit=1973%2C2935&ssl=1",
+    "genre": ["Fantasy", "Action"],
+    "synopsis": "A great movie",
+    "classification": "PG-13",
+    "duration": 116,
+    "director": "Sam Raimi",
+    "cast": ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
+    "originalLanguage": "Inglés",
+    "releaseYear": 2002-01-01
 }
 ```
 
@@ -212,17 +212,17 @@ Además, se necesita mandar un JSON con los atributos que desean mostrarse, teni
 ```
 {
     "_id: 0,
-    "movie.id": 1,
-    "movie.title": 1,
-    "movie.image": 0,
-    "movie.genre": 0,
-    "movie.synopsis": 0,
-    "movie.classification": 0,
-    "movie.duration": 0,
-    "movie.director": 0,
-    "movie.cast": 0,
-    "movie.originalLanguage": 0,
-    "movie.releaseYear": 0
+    "id": 1,
+    "title": 1,
+    "image": 0,
+    "genre": 0,
+    "synopsis": 0,
+    "classification": 0,
+    "duration": 0,
+    "director": 0,
+    "cast": 0,
+    "originalLanguage": 0,
+    "meleaseYear": 0
 }
 ```
 ## 🎞 Resultados
