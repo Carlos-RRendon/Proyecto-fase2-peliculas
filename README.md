@@ -5,6 +5,8 @@ Desarrollo de API con base en lo aprendido a lo largo de las sesiones correspond
 - Sergio Alberto García Martínez
 - Carlos Iván Ramírez Rendón
 
+Puedes encontrar la documentacion Swagger en este link [https://app.swaggerhub.com/apis-docs/FreshRatings/FreshRatingsAPI/1.0.0](https://app.swaggerhub.com/apis-docs/FreshRatings/FreshRatingsAPI/1.0.0)
+
 ## 📜 Descripción del proyecto
 El proyecto consiste en desarrollar una API para la manipulación y búsqueda de películas, así como su información. Los usuarios serán capaces de manipular la información almacenada en la base de datos y realizar operaciones `CRUD` (Create, Read, Update, Delete), correspondientes a las peticiones `GET`, `POST`, `PUT` y `DELETE`.
 
