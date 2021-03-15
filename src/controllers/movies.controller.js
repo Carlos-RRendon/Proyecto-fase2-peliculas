@@ -119,7 +119,7 @@ movieCtrl.findAndFilter =async (req,res,next) => {
          });
      }
 
-
+    
     
     try{
         const movie = await Movie.find()
