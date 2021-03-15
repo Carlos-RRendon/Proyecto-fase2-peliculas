@@ -224,13 +224,13 @@ Además, se necesita mandar un JSON con los atributos que desean mostrarse, teni
 ```
 ## 🎞 Resultados
 A continuación se muestran algunas capturas de las consultas realizadas
-![Historias de usuario](./img/addNewRegister.jpeg)  
-![Historias de usuario](./img/GetAllMovies.jpeg)  
-![Historias de usuario](./img/GetById.jpeg)  
-![Historias de usuario](./img/GetAllandLimit.jpeg)  
-![Historias de usuario](./img/FindByAttrib.jpeg)  
-![Historias de usuario](./img/UpdateoneAttrib.jpeg)  
-![Historias de usuario](./img/DeleteMovie.jpeg)  
+![Historias de usuario](./img/addNewRegister.png)  
+![Historias de usuario](./img/GetAllMovies.png)  
+![Historias de usuario](./img/GetById.png)  
+![Historias de usuario](./img/GetAllandLimit.png)  
+![Historias de usuario](./img/FindByAttrib.png)  
+![Historias de usuario](./img/UpdateoneAttrib.png)  
+![Historias de usuario](./img/DeleteMovie.png)  
 
 
 
