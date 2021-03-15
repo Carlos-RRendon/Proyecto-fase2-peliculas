@@ -131,15 +131,15 @@ Para el desarrollo de la API planteamos dos modelos diferentes, mismos que se pl
         index: true
     },
     password :{ type:String, required: true },
-    type:{ 
+    type:{
         type: String,
         lowercase: true,
-        enum: ['admin','user'], 
+        enum: ['admin','user'],
         default: 'user'
     }
     },{timestamps:true});
     ```
-## 😎 Implementación y resultados
+## 😎 Implementación
 Una vez realizado todo el análisis de las historias de usuario y la implementación mediante el código, se obtuvieron los resultados siguietes:
 
 #### 1. Agregar una nueva película
@@ -168,35 +168,18 @@ Para realizar esta acción se necesita la petición `delete` y la URL como la qu
 
 La acción que se quiere realizar corresponde a la eliminación de una sola película, por lo tanto se debe señalar el id (identificador único de cada película) dentro del URL de la petición, correspondiente al parámetro **":id"**, y no se debe añadir algo extra en el cuerpo de la petición.
 
-#### PENDIENTE 3. Actualizar un solo atributo de una nueva película
+#### 3. Actualizar un solo atributo de una nueva película
 Esta acción necesita la petición `put` y la URL como la que se muestra a continuación:
 > `https://freshratings.herokuapp.com/v1/movies/:id`  
 
-Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en el cuerpo, tal como en el ejemplo siguiente:
+Puesto que corresponde a una petición put, se necesita mandar un objeto JSON con el atributo que se quiere modificar, tal como en el ejemplo siguiente:
 ```
 {
-    originalLanguage: "Chino"
+    "originalLanguage": "Chino"
 }
 ```
-#### PENDIENTE 4. Actualizar todos los atributo de una nueva película
-Esta acción necesita la petición `post` y la URL como la que se muestra a continuación:
-> `https://freshratings.herokuapp.com/v1/movies/:id`  
-
-Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en el cuerpo, tal como en el ejemplo siguiente:
-```
-{
-    title: "Spider-Man",
-    image: "https://i2.wp.com/plexmx.info/wp-content/uploads/2019/08/spiderman_ver1_xxlg.jpg?fit=1973%2C2935&ssl=1",
-    genre: ["Fantasy", "Action"],
-    synopsis: "A great movie",
-    classification: "PG-13",
-    duration: 116,
-    director: "Sam Raimi",
-    cast: ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
-    originalLanguage: "Inglés",
-    releaseYear: 2002-01-01
-}
-```
+#### 4. Actualizar todos los atributo de una nueva película
+Esta acción (al igual que la anterior), necesita de un **id** para encontrar la película que se quiere actualizar, además se necesita un JSON con todos los atributos pertenecientes a la película, muy parecido al de agregar película.  
 
 #### 5. Consultar una nueva película por id
 Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
@@ -208,7 +191,13 @@ La acción que se quiere realizar corresponde a la obtención de una sola pelíc
 Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
 > `https://freshratings.herokuapp.com/v1/movies`  
 
-Puesto que se desea obtener todos los registros correspondientes a las películas, no se necesita añadir algo extra al cuerpo de la petición.
+Puesto que se desea obtener todos los registros correspondientes a las películas, no se necesita añadir algo extra al cuerpo de la petición.  
+
+#### 7. Consultar "n" cantidad de películas
+Para esta acción se pasará como parámetro en el URL el número de películas que se quieren obtener, no se necesita pasar un JSON en el cuerpo de la petición.  
+
+#### 8. Consultar películas por coincidencia de atributos
+En esta petición se obtendrán todos los registros de películas que dentro se sus registros tengan presente el texto que el usuario deseé, es decir, si el usuario busca la palabra "Spider", la respuesta serán las películas de "Spider-man", "Spider-man 2" y "Spider-man 3".  
 
 #### 9. Consultar película limitando los campos mostrados
 Para realizar esta acción se necesita la petición `post` y la URL como la que se muestra a continuación:
@@ -233,6 +222,17 @@ Además, se necesita mandar un JSON con los atributos que desean mostrarse, teni
     "movie.releaseYear": 0
 }
 ```
+## 🎞 Resultados
+A continuación se muestran algunas capturas de las consultas realizadas
+![Historias de usuario](./img/addNewRegister.jpeg)  
+![Historias de usuario](./img/GetAllMovies.jpeg)  
+![Historias de usuario](./img/GetById.jpeg)  
+![Historias de usuario](./img/GetAllandLimit.jpeg)  
+![Historias de usuario](./img/FindByAttrib.jpeg)  
+![Historias de usuario](./img/UpdateoneAttrib.jpeg)  
+![Historias de usuario](./img/DeleteMovie.jpeg)  
+
+
 
 
 
