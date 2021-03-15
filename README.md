@@ -141,9 +141,46 @@ Para el desarrollo de la API planteamos dos modelos diferentes, mismos que se pl
     ```
 ## 😎 Implementación y resultados
 Una vez realizado todo el análisis de las historias de usuario y la implementación mediante el código, se obtuvieron los resultados siguietes:
-1. #### Agregar una nueva película
-Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
+
+#### 1. Agregar una nueva película
+Para realizar esta acción se necesita la petición `post` y la URL como la que se muestra a continuación:
 > `https://freshratings.herokuapp.com/v1/movies`  
+
+Puesto que corresponde a una petición post, se necesita mandar un objeto JSON en el cuerpo, mismo que será almacenado en la BD, como el siguiente:
+```
+{
+    title: "Spider-Man",
+    image: "https://i2.wp.com/plexmx.info/wp-content/uploads/2019/08/spiderman_ver1_xxlg.jpg?fit=1973%2C2935&ssl=1",
+    genre: ["Fantasy", "Action"],
+    synopsis: "A great movie",
+    classification: "PG-13",
+    duration: 116,
+    director: "Sam Raimi",
+    cast: ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco"],
+    originalLanguage: "Inglés",
+    releaseYear: 2002-01-01
+}
+```
+
+#### 2. Eliminar una película
+Para realizar esta acción se necesita la petición `delete` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies/:id`  
+
+La acción que se quiere realizar corresponde a la eliminación de una sola película, por lo tanto se debe señalar el id (identificador único de cada película) dentro del URL de la petición, correspondiente al parámetro **":id"**, y no se debe añadir algo extra en el cuerpo de la petición.
+
+#### PENDIENTE 3. Actualizar un solo atributo de una nueva película
+Esta acción necesita la petición `put` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies/:id`  
+
+Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en el cuerpo, tal como en el ejemplo siguiente:
+```
+{
+    originalLanguage: "Chino"
+}
+```
+#### PENDIENTE 4. Actualizar todos los atributo de una nueva película
+Esta acción necesita la petición `post` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies/:id`  
 
 Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en el cuerpo, tal como en el ejemplo siguiente:
 ```
@@ -160,6 +197,43 @@ Puesto que corresponde a una petición get, se necesita mandar un objeto JSON en
     releaseYear: 2002-01-01
 }
 ```
+
+#### 5. Consultar una nueva película por id
+Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies/:id`  
+
+La acción que se quiere realizar corresponde a la obtención de una sola película, por lo tanto se debe señalar el id (identificador único de cada película) dentro del URL de la petición, correspondiente al parámetro **":id"**, y no se debe añadir algo extra en el cuerpo de la petición.
+
+#### 6. Consultar todas las películas
+Para realizar esta acción se necesita la petición `get` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies`  
+
+Puesto que se desea obtener todos los registros correspondientes a las películas, no se necesita añadir algo extra al cuerpo de la petición.
+
+#### 9. Consultar película limitando los campos mostrados
+Para realizar esta acción se necesita la petición `post` y la URL como la que se muestra a continuación:
+> `https://freshratings.herokuapp.com/v1/movies/search?:id`  
+Ejemplo: `https://freshratings.herokuapp.com/v1/movies/search?_id=20`  
+
+La acción que se quiere realizar corresponde a la obtención de una sola película, pero limitando los campos, por lo tanto se debe señalar el id (identificador único de cada película) dentro del URL de la petición, correspondiente al parámetro **":id"**.  
+Además, se necesita mandar un JSON con los atributos que desean mostrarse, teniendo **1** para mostrarlo o **0** en caso de no quererlo. Como el siguiente ejemplo:
+```
+{
+    "_id: 0,
+    "movie.id": 1,
+    "movie.title": 1,
+    "movie.image": 0,
+    "movie.genre": 0,
+    "movie.synopsis": 0,
+    "movie.classification": 0,
+    "movie.duration": 0,
+    "movie.director": 0,
+    "movie.cast": 0,
+    "movie.originalLanguage": 0,
+    "movie.releaseYear": 0
+}
+```
+
 
 
 
