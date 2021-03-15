@@ -1,5 +1,4 @@
 //Conexion a la base de datos con mongoose
-
 const mongoose = require('mongoose');
 
 const { MONGODB_USER, MONGODB_PASS, MONGODB_DATABASE } = require('./config/config');
