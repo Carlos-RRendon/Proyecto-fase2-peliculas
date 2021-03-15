@@ -112,14 +112,14 @@ movieCtrl.findAndFilter =async (req,res,next) => {
          enableId = { _id :  filters._id};
          Object.keys(filters)
          .forEach( element => {
-             if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear","_id"].includes(element))
+             if (!["movie.genre","movie._id","movie.title","movie.image","movie.synopsis","movie.duration","movie.director","movie.cast","movie.releaseYear","_id","originalLanguage"].includes(element))
              delete filters[element];
              if (filters[element] !== 1 )
              delete filters[element];
          });
      }
 
-
+    
     
     try{
         const movie = await Movie.find()
