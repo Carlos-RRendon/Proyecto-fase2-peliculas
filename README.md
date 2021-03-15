@@ -1,6 +1,9 @@
 # <center>🎥 Proyecto Fresh Ratings 🎥</center>
-Desarrollo de API con base en lo aprendido a lo largo de las sesiones correspondientes al módulo "Back-end Fundamentals", de la fase 2 del programa Desarrollo Web, impartido por la empresa BEDU en colaboración con Becas Santander.
-##### Equipo 18
+Desarrollo de API con base en lo aprendido a lo largo de las sesiones correspondientes al módulo "Back-end Fundamentals", de la fase 2 del programa Desarrollo Web, impartido por la empresa BEDU en colaboración con Becas Santander.  
+#### Equipo 18
+- Jesus Omar Cervantes Gonzalez
+- Sergio Alberto García Martínez
+- Carlos Iván Ramírez Rendón
 
 ## 📜 Descripción del proyecto
 El proyecto consiste en desarrollar una API para la manipulación y búsqueda de películas, así como su información. Los usuarios serán capaces de manipular la información almacenada en la base de datos y realizar operaciones `CRUD` (Create, Read, Update, Delete), correspondientes a las peticiones `GET`, `POST`, `PUT` y `DELETE`.
@@ -231,20 +234,5 @@ A continuación se muestran algunas capturas de las consultas realizadas
 ![Historias de usuario](./img/FindbyAttrib.png)  
 ![Historias de usuario](./img/UpdateoneAttrib.png)  
 ![Historias de usuario](./img/DeleteMovie.png)  
-
-
-
-
-
-
-
-
-
-
-
-### Equipo 18
-- Jesus Omar Cervantes Gonzalez
-- Sergio Alberto García Martínez
-- Carlos Iván Ramírez Rendón
 
 
