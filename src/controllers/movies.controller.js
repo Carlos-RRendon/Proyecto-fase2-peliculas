@@ -10,20 +10,6 @@ movieCtrl.addMovie = (req, res,next) => {
    
    const {movie} = req.body;
 
-//    const checkDuplicates = () => {
-//        scoreArray = [];
-//        score.forEach(element => {
-//            if (scoreArray.includes(element.user))
-//             throw new Error('User can only rate once')
-//            else scoreArray.push(element.user)
-//        })
-//    }
-
-//    try{
-//        checkDuplicates();
-//     }catch (e){
-//         res.send(e.message)
-//     }   
     movie.releaseYear = movie.releaseYear.toString()
     const newMovie = new Movie({movie});   
        
@@ -32,14 +18,6 @@ movieCtrl.addMovie = (req, res,next) => {
         res.status(201).send(`Movie added successfully ID:${movie._id} `)
     })
     .catch( next );
-
-    /*
-   //Function to validate without saving in DB
-   newMovie.validate()
-   .then( value => {res.send(`Movie added successfully: ${JSON.stringify(score)}`)} )
-   .catch( e => res.send(next()));
-   */
-   
      
 };
 
@@ -136,6 +114,8 @@ movieCtrl.findAndFilter =async (req,res,next) => {
 
 //UPDATE
 movieCtrl.totalUpdate = async (req,res,next) => {
+
+    const id = req.params.id;
  
     if (Object.keys(req.body).length !== 0  ){
             
